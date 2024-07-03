@@ -1,5 +1,11 @@
 @media (max-width: 800px) {
 
+
+    .btn-sec {
+        background-color: white;
+        border: none;
+        font-size: 15px;
+    }
     .sub-heading {
         font-size: 40px;
         font-weight: 800;

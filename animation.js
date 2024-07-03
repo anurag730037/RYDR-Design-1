@@ -8,7 +8,7 @@ rydrBrand.style.opacity = 0; // Initially hidden
 rydrBrand.style.transform = 'translate(-50%, -50%) scale(1)'; // Not zoomed in
 
 console.log('heigth', window.screen.height)
-console.log('width', window.screen.width)
+console.log('width', window.screen.height)
 
 window.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
@@ -39,7 +39,7 @@ window.addEventListener('scroll', function () {
 
     // Show the slogan
     if (scrollPosition > sloganTrigger) {
-        slogan.style.top = '25vh'; // Adjust based on desired position
+        slogan.style.top = '29vh'; // Adjust based on desired position
         slogan.style.opacity = 1;
 
         console.log('Slogan Section Triggered')

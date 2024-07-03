@@ -30,13 +30,14 @@
     top: 100vh;
     width: 100%;
     text-align: center;
+    font-size: 2rem;
     color: black;
     opacity: 0;
     transition: top 1s ease-in-out, opacity 1s ease-in-out;
 
     font-size: 37px;
     font-weight: 700;
-    line-height: 150px;
+    line-height: 76px;
     letter-spacing: -0.02em;
     text-align: center;
 

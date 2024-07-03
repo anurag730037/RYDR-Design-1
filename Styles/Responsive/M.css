@@ -1,0 +1,324 @@
+@media (max-width: 800px) {
+
+    .sub-heading {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 100px;
+        margin-top: 19px;
+        margin-bottom: 20px;
+    }
+
+    .under-sub-heading {
+        font-size: 18px;
+    }
+
+    .know-more {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+        border: none;
+        padding: 3px 20px;
+        border-radius: 20px;
+        margin-top: 5px;
+    }
+
+    .title-img {
+        right: 3%;
+        width: 47%;
+    }
+
+    .side-text {
+        padding: 0 15px;
+    }
+
+    .home-section {
+        padding: 220px 50px;
+    }
+
+
+    .line-1 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .line-2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .line-3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+
+    .line-4 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .home-points {
+        font-size: 17px;
+        padding: 25px 10px;
+    }
+
+    .btn-sec a {
+        font-size: 13px;
+    }
+
+    .btn-1,
+    .btn-2 {
+        padding: 7px 13px;
+    }
+
+    .moto-head {
+        margin-top: 1.5rem !important;
+    }
+
+    .moto-content p {
+        font-size: 14px;
+        text-align: center;
+        padding: 0px 20px;
+        line-height: 26px;
+    }
+
+
+    .points-desc p {
+        margin-bottom: 0;
+        padding: 0px 5px;
+        font-size: 11px;
+    }
+
+    .why-choose-heading {
+        font-size: 40px;
+    }
+
+    .why-choose-content {
+        width: 95%;
+        gap: 40px;
+    }
+
+    .why-choose-div {
+        width: 75%;
+    }
+
+    .points img {
+        width: 70px;
+    }
+
+    .points-desc strong {
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+
+
+    .whats {
+        margin-bottom: 0px;
+    }
+
+    .selection h4 {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .card-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: justify;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+
+    .driver-part .card-title {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .driver-part .card-text {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 26px;
+        letter-spacing: -0.03em;
+        text-align: justify;
+    }
+
+    .driver-part .card-body {
+        padding: 0.7rem;
+    }
+
+    .safety-content {
+        margin-top: 0;
+    }
+
+
+    .safety-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        padding-left: 7px;
+        text-align: justify;
+    }
+
+    .footer-logo img {
+        width: 150px;
+    }
+
+    .download-app p {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .app-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-links img {
+        width: 18%;
+    }
+
+    .footer-heading {
+        font-size: 22px;
+    }
+
+    .direct-links {
+        font-size: 15px;
+    }
+
+    .add-div p {
+        font-size: 11px;
+    }
+
+
+    .contact-form input,
+    .contact-form textarea {
+        margin-bottom: 5px;
+        padding: 1px;
+    }
+
+    .contact-form ::placeholder {
+        font-size: 11px;
+        padding: 8px;
+    }
+
+    textarea.form-control {
+        height: 45px;
+    }
+
+    .footer-bottom p,
+    .footer-end a {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .footer-end a {
+        font-size: 12px;
+    }
+
+    .add-sec,
+    .contact-sec {
+        /* margin-top: 10px; */
+    }
+
+    .footer-end {
+        text-align: center;
+    }
+
+    .footer-heading {
+        text-align: center;
+    }
+
+    .download-app p {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 35px;
+    }
+
+    .app-links img {
+        width: 60%;
+        margin: 2px;
+    }
+
+
+    .add-div,
+    .contact-div {
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+
+
+
+    /* Safety Page  */
+    .safety-page-top {
+        padding: 190px 51px;
+    }
+
+    .safety-heading {
+        margin-bottom: 0;
+        line-height: 70px;
+    }
+
+    .safety-card-group .card {
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+    }
+
+    .safety-card-body {
+        padding: 1.25rem 7px !important;
+    }
+
+    .safety-card-title {
+        font-size: 14px !important;
+    }
+
+    .safety-card-text {
+        font-size: 12px;
+        line-height: 22px;
+        -webkit-line-clamp: 5;
+    }
+
+    .driver-safety-card-group {
+        width: 83%;
+    }
+
+
+
+    /* Drive With US  */
+
+    .drive-text {
+        padding: 0;
+    }
+
+    .with-us-top {
+        padding: 200px 50px;
+    }
+
+    .drive-heading {
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+
+    .adv-card-top {
+        gap: 10px;
+    }
+
+    .adv-card-img img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .adv-card-title h5 {
+        margin-top: 15px;
+        font-size: 1.1rem;
+    }
+
+}

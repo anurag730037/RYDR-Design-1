@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <!-- <link rel="stylesheet" href="./global.css" /> -->
+
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/classy-nav.css">
+
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- RESPONSIVE CSS  -->
+
+    <link rel="stylesheet" href="Styles/Responsive/XL.css">
+    <link rel="stylesheet" href="Styles/Responsive/L.css">
+    <link rel="stylesheet" href="Styles/Responsive/M.css">
+    <link rel="stylesheet" href="Styles/Responsive/S.css">
+
+    <script src="JS/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <section>
+        <header class="header-area">
+            <div class="main-header-area">
+                <div class="classy-nav-container breakpoint-off">
+                    <nav class="classy-navbar justify-content-between" id="uzaNav">
+                        <a class="nav-brand" href="index.html"><img src="Images/new-logo.png" alt="Ryder Logo"></a>
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <div class="classy-menu">
+
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <div class="classynav">
+                                <div>
+                                    <ul id="nav" class="home-parent">
+                                        <li class=" text-decoration-none nav-items"><a href="./index.html">Home</a></li>
+                                        <li class="text-decoration-none nav-items"><a href="safety.html">Safety</a>
+                                        </li>
+                                        <li class="text-decoration-none nav-items"><a href="drive_with_us.html">Drive
+                                                with us</a></li>
+                                        <li class="text-decoration-none nav-items"><a href="about_us.html">About
+                                                Us</a></li>
+                                        <li class="current-item text-decoration-none nav-items"><a
+                                                href="initiatives.html">Our
+                                                Initiatives</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- <div>|</div> -->
+
+                                <div class="login-register-btn mx-3" data-toggle="modal" data-target="#customer-login">
+                                    <a href="login.html">
+
+                                        <div class="log-in">Log In</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </section>
+
+
+    <footer class="footer">
+        <div class="">
+            <div class="row footer-section">
+
+                <div class="col-lg-4 col-md-4 col-6">
+                    <div class="footer-logo">
+                        <img src="Images/new-logo.png" alt="Logo">
+                    </div>
+                    <div class="download-app">
+                        <p>Download Our App</p>
+                        <div class="app-links">
+                            <a href="playstore-link"><img src="Images/Google_Play_Store_badge_EN.svg.png"
+                                    alt="Play Store"></a>
+                            <a href="applestore-link"><img src="Images/App_Store_Badge.svg (2).png"
+                                    alt="Apple Store"></a>
+                        </div>
+                    </div>
+                    <div class="social-links mt-3">
+                        <a href="facebook-link"><img src="Images/Facebook.png" alt=""></a>
+                        <a href="twitter-link"><img src="Images/Twitter.png" alt=""></a>
+                        <a href="instagram-link"><img src="Images/Instagram.png" alt=""></a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-2 col-6">
+                    <h5 class="footer-heading">Shortcuts</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="direct-links" href="index.html">Home</a></li>
+                        <li><a class="direct-links" href="safety.html">Safety</a></li>
+                        <li><a class="direct-links" href="drive_with_us.html">Drive with Us</a></li>
+
+                        <li><a class="direct-links" href="about_us.html">About Us</a></li>
+                        <li><a class="direct-links" href="initiatives.html">Initiatives</a></li>
+                        <li><a class="direct-links" href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-3 add-sec col-6">
+                    <h5 class="footer-heading">Address</h5>
+
+                    <div class="add-div">
+                        <p><strong class="add">Registered Office:</strong><br>
+                            737-738, 7 Floor, Mall of Jaipur, Gandhi Path, W B Block, Vaishali Nagar,
+                            Jaipur, Raj 302021
+                            <br>
+                            Email: reachus@rydr.co.in<br>
+                        </p>
+                        <p><strong class="add">Branch Office:</strong><br>
+                            G 148 First Floor South City 2, Gurugram, Haryana 122018 <br>
+                            Email: reachus@rydr.co.in</p>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-3 col-6 d-flex  flex-column align-item-center contact-sec">
+                    <div>
+                        <h5 class="footer-heading">Contact Us</h5>
+                    </div>
+                    <div>
+                        <form class="contact-form contact-div">
+                            <input type="text" class="form-control" placeholder=" Name" id="connect-name" required>
+                            <input type="number" class="form-control" placeholder=" Phone" required name=""
+                                id="connect-phone">
+                            <input type="email" class="form-control" placeholder="Email" id="connect-email" required>
+                            <textarea class="form-control" rows="3" placeholder=" Message" id="connect-message"
+                                required></textarea>
+                            <button type="submit" class="btn log-in contact-btn" id="contact-submit">Contact</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom row">
+
+                <div class="col-lg-5 col-md-5">
+                    <p>© 2024 @ First And Last Mile Connectivity India PVT. Limited. All Rights Reserved.</p>
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-12 text-md-right footer-end">
+                    <a href="privacy-policy-link">Privacy Policy</a>
+                    <span> | </span>
+                    <a href="terms-conditions-link">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    </div>
+
+
+
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="JS/contact-form.js"></script>
+    <script src="JS/popper.min.js"></script>
+
+
+    <script src="JS/uza.bundle.js"></script>
+
+    <script src="JS/active.js"></script>
+
+    <!-- <script src="js/testimonial.js"></script> -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script src="JS/CustAndDriver.js"></script>
+</body>
+
+</html>

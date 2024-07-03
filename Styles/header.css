@@ -1,0 +1,444 @@
+/* :: 8 Header CSS :: */
+.header-area {
+    position: fixed;
+    z-index: 600;
+    width: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+#nav {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-area .main-header-area {
+        border-top: 10px solid #303030;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-area .main-header-area {
+        border-top: 10px solid #303030;
+    }
+}
+
+.header-area .main-header-area.sticky {
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    /* -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1); */
+    border-bottom: none;
+    left: 0;
+    z-index: 650;
+}
+
+.header-area .search-icon {
+    position: relative;
+    z-index: 1000000000000;
+    margin-left: 14px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-area .search-icon {
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-area .search-icon {
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+}
+
+.header-area .search-icon i {
+    font-size: 20px;
+    color: #303030;
+    cursor: pointer;
+}
+
+.classy-nav-container {
+    background-color: transparent;
+    padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .classy-nav-container {
+        /* padding: 0 15px; */
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .classy-nav-container .classy-navbar {
+        height: 70px;
+        padding: 0 5%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .classy-nav-container .classy-navbar {
+        height: 70px;
+        padding: 0 5%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .classy-nav-container .classy-navbar .nav-brand {
+        max-width: 90px;
+        margin-right: 15px;
+    }
+}
+
+.classy-nav-container .classy-navbar .classynav ul li a {
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #777777;
+}
+
+.classy-nav-container .classy-navbar .classynav ul li.current-item a {
+    color: var(--primary-clr);
+    font-weight: 700;
+}
+
+.classy-nav-container .classy-navbar .classynav ul li a:focus,
+.classy-nav-container .classy-navbar .classynav ul li a:hover {
+    /* color:rgb(255, 86, 86) */
+    /* color: white; */
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .classy-nav-container .classy-navbar .classynav ul li a {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .classy-nav-container .classy-navbar .classynav ul li a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .classy-nav-container .classy-navbar .classynav ul li a {
+        font-size: 14px;
+    }
+}
+
+.classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 30px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a {
+        font-size: 14px;
+        color: #c30000;
+    }
+}
+
+.classy-nav-container .classy-navbar .classynav ul li.current-item a::after {
+    /* content: '';
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: var(--primary-clr);
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1;
+    color: var(--primary-clr); */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .classy-nav-container .classy-navbar .classynav ul li.current-item a::after {
+        width: 100%;
+        height: 1px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .classy-nav-container .classy-navbar .classynav ul li.current-item a::after {
+        width: 100%;
+        height: 1px;
+    }
+}
+
+.classynav ul li.has-down>a::after,
+.classynav ul li.has-down.active>a::after,
+.classynav ul li.megamenu-item>a::after {
+    color: #303030;
+}
+
+.breakpoint-off .classynav ul li .dropdown {
+    width: 210px;
+    -webkit-box-shadow: var(--pr-shadow);
+    box-shadow: var(--pr-shadow);
+    border-radius: 6px;
+}
+
+.top-search-area .modal-content {
+    border: none;
+}
+
+#download_rydr .modal-dialog {
+    max-width: 900px;
+}
+
+#download_rydr .driver-app img {
+    width: 50%;
+}
+
+#download_rydr .customer-app img {
+    width: 40%;
+    margin-bottom: 1.3rem;
+}
+
+.top-search-area .modal-content .modal-body {
+    padding: 50px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .top-search-area .modal-content .modal-body {
+        padding: 50px 15px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .top-search-area .modal-content .modal-body {
+        padding: 50px;
+    }
+}
+
+.top-search-area .modal-content .modal-body button.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    font-size: 14px;
+}
+
+.top-search-area .modal-content .modal-body button.close-btn.btn {
+    padding: 0;
+    background-color: transparent;
+}
+
+.top-search-area .modal-content .modal-body button.close-btn.btn:focus,
+.top-search-area .modal-content .modal-body button.close-btn.btn:hover {
+    box-shadow: none;
+    color: var(--primary-clr);
+}
+
+.top-search-area form {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.top-search-area form input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    font-size: 12px;
+    font-style: italic;
+    padding: 0 20px;
+}
+
+
+
+#customer-login .modal-dialog {
+    max-width: 400px;
+}
+
+#customer_signup_form .modal-dialog>#customer-login .modal-dialog {
+    display: none;
+}
+
+#customer_signup_form .rydr-contact-form,
+#customer-login .rydr-contact-form {
+    margin: 20px 0;
+}
+
+#customer_signup_form .modal-body,
+#customer-login .modal-body {
+    padding: 0;
+}
+
+#customer_signup_form .modal-body .contact-heading,
+#customer-login .modal-body .contact-heading h5,
+#customer-login form {
+    padding: 0 20px;
+}
+
+#customer_signup_form form {
+    padding: 0 40px;
+}
+
+#customer_signup_form .modal-body .contact-heading .border-line,
+#customer-login .modal-body .contact-heading .border-line {
+    background-color: #ccc;
+}
+
+#signup .rydr-contact-form button :disabled,
+#customer_signup_form .rydr-contact-form button:disabled,
+#customer-login .rydr-contact-form button:disabled {
+    background-color: #0000001f;
+    border-color: #00000000;
+    color: #00000042;
+}
+
+#customer-login .customer-login-form .customer-phone input {
+    position: relative;
+    padding-left: 80px;
+    font-style: normal;
+}
+
+#customer-login .customer-login-form .customer-phone input::placeholder {
+    position: absolute;
+    left: 80px;
+    height: -webkit-fill-available;
+    padding: 14px 0;
+}
+
+#customer-login .customer-login-form .customer-phone span {
+    position: absolute;
+    z-index: 1;
+    padding: 0 18px;
+    background: transparent;
+    border-right: 1px solid #ccc;
+    border-radius: 30px 0px 0px 30px;
+    height: -webkit-fill-available;
+    line-height: 3.4;
+}
+
+.blue-txt {
+    color: var(--primary-clr);
+    cursor: pointer;
+    padding-top: 25px;
+    width: 100%;
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#customer-login .rydr-contact-form .form-control,
+#customer-login .rydr-contact-form button {
+    height: 45px !important;
+}
+
+#signup form input,
+#customer_signup_form form input,
+#customer-login form input {
+    border: 1px solid #ced4da;
+    box-shadow: none;
+}
+
+#signup .rydr-contact-form button,
+#customer_signup_form .rydr-contact-form button,
+#customer-login .rydr-contact-form button {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-width: 160px;
+    height: 50px;
+    line-height: normal;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0 30px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--primary-clr);
+    border-radius: 50px;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.top-search-area form input:focus {
+    box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
+}
+
+.top-search-area form button {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    border-radius: 0 6px 6px 0;
+    border: none;
+    background-color: var(--primary-clr);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .top-search-area form button {
+        width: 80px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .get-a-quote {
+        margin: 30px 15px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .get-a-quote {
+        margin: 30px 15px !important;
+    }
+}
+
+.login-register-btn .bi-person-circle {
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width: 630px) {
+    .classy-nav-container .classy-navbar .nav-brand {
+        max-width: 120px;
+    }
+}
+
+
+.classy-nav-container .classy-navbar .classynav ul li a:hover {
+    font-size: 21px !important;
+    /* Increase font size on hover */
+}

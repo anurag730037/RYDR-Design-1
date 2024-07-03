@@ -1,0 +1,139 @@
+.topSection {
+    opacity: 1;
+    /* height: 80vh; */
+    /* Cover the whole screen initially */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+#rydr-brand {
+    position: fixed;
+    left: 50%;
+
+    /* transform: translateX(-50%) scale(1); */
+    opacity: 0;
+    font-size: 100px;
+    color: #c30000 !important;
+    z-index: 1000;
+    transition: opacity 1s ease-in-out, transform 3s ease-in-out;
+    height: 50vh;
+    font-size: 150px;
+    font-weight: 700;
+    text-align: left;
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%) scale(10); */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+
+}
+
+.slogan {
+    position: fixed;
+    top: 100vh;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    opacity: 0;
+    transition: top 1s ease-in-out, opacity 1s ease-in-out;
+
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 76px;
+    letter-spacing: -0.02em;
+    text-align: center;
+
+}
+
+
+.nextSection {
+    display: none;
+    position: relative;
+    /* Make sure position is relative */
+    /* height: 100vh; */
+    opacity: 0;
+    /* transform: translateY(100%); */
+    /* Start off-screen */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    /* Smooth animation */
+}
+
+.nextSection {}
+
+.showNextSection {
+    display: flex !important;
+    opacity: 1;
+    /* Fade in */
+    /* Move to position */
+    /* animation: slideUp 1s forwards; */
+    /* Apply slideUp animation */
+    top: 10%;
+    transform: translateY(-100vh);
+}
+
+
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(1);
+    }
+}
+
+@keyframes fadeInZoomIn {
+    from {
+        opacity: 0;
+        transform: translate(50%, 50%) scale(10);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -190%) scale(1);
+
+    }
+}
+
+
+
+@keyframes fadeOutZoomOut {
+    from {
+        opacity: 1;
+        /* transform: translate(-50%, -50%) scale(1); */
+
+        transform: translate(-50%, -190%) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(5);
+    }
+}
+
+
+.over {
+    background-color: white;
+}
+
+.home-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* .overlay-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(30);
+    transition: transform 1s ease-out;
+    opacity: 0;
+    z-index: 10;
+}
+
+.overlay-img.zoomed {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+} */

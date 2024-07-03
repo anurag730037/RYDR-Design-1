@@ -1,0 +1,287 @@
+@media (max-width: 575px) {
+
+
+    .sub-heading {
+        font-size: 35px;
+    }
+
+    .section-margin {
+        margin: 0;
+    }
+
+    .why-choose-heading {
+        font-size: 35px;
+    }
+
+    .home-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-bottom: 122px; */
+        text-align: center;
+        padding: 50px 25px;
+        padding-bottom: 200px;
+    }
+
+    .home-text {
+        position: static;
+        left: auto;
+    }
+
+    .title-img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .motos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .why-choose-section {
+        margin-top: 30px
+    }
+
+    .why-img {
+        height: 50vh;
+    }
+
+    .why-choose-content {
+
+        flex-direction: column;
+    }
+
+    .why-choose-div {
+        width: 100%;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+    .driver-part .card-text {
+        font-size: 16px;
+    }
+
+    .safety-section {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* SAFETY  */
+    .safety-page-top {
+        padding-bottom: 0;
+        padding: 40px 0px;
+        justify-content: start;
+    }
+
+    .line-1,
+    .line-2,
+    .line-4,
+    .line-3 {
+        font-size: 20px;
+        line-height: 25px;
+        padding: 10px;
+    }
+
+    .safety-page-text .side-text {
+        padding: 0px !important;
+        text-align: start;
+    }
+
+    .safety-card-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        margin-top: 20px;
+
+    }
+
+    .safety-card-title {
+        font-size: 20px !important;
+    }
+
+
+    .safety-card-text {
+        padding: 0px 22px;
+        font-size: 14px;
+    }
+
+    .driver-safety-card-group {
+        margin-top: 0px;
+    }
+
+    .driver-safety-card-group {
+        margin: 0px;
+        width: 70%;
+    }
+
+    /* DRIVW WITH US  */
+
+    .with-us-top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 0;
+        text-align: center;
+        padding: 20px 19px;
+        padding-bottom: 0px;
+    }
+
+    .with-us-text {
+        align-items: center;
+    }
+
+    .drive-heading {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .adv-part {
+        padding: 25px 0px;
+    }
+
+
+
+    .list-unstyled li {
+        text-align: center;
+    }
+
+    .adv-sec {
+        align-items: center;
+    }
+
+    .adv-wid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .adv-card-top {
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 85%;
+        justify-content: center;
+    }
+
+
+}
+
+
+
+
+
+@media (min-width: 431px) and (max-width: 575px) {
+    .title-img {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 35%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:410px) {
+
+    .line-1 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    .line-2 {
+        font-size: 27px;
+        line-height: 35px;
+    }
+
+    .line-2 {
+        font-size: 27px;
+        line-height: 35px;
+    }
+
+    .line-4 {
+        font-size: 27px;
+        line-height: 35px;
+    }
+
+    .home-points {
+        font-size: 16px;
+        padding: 20px 10px;
+    }
+
+    .footer-bottom p {
+        font-size: 8px;
+    }
+
+    .download-app p {
+        font-size: 15px;
+    }
+
+    .social-links {
+        display: flex;
+    }
+
+    .list-unstyled li {
+        margin-top: 2px;
+    }
+
+
+
+    .social-links a {
+        margin: 0;
+    }
+
+    .social-links img {
+        width: 75%;
+    }
+
+    .sub-heading {
+        font-size: 30px;
+    }
+
+    .moto-content p {
+        text-align: justify;
+    }
+
+    .why-choose-heading {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+}

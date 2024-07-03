@@ -7,6 +7,9 @@ const nextSections = document.querySelectorAll('.nextSection');
 rydrBrand.style.opacity = 0; // Initially hidden
 rydrBrand.style.transform = 'translate(-50%, -50%) scale(1)'; // Not zoomed in
 
+console.log('heigth', window.screen.height)
+console.log('width', window.screen.width)
+
 window.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
     const topSectionTrigger = 100; // Adjust scroll trigger point (in pixels)

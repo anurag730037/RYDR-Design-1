@@ -14,7 +14,7 @@ window.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
     const topSectionTrigger = 100; // Adjust scroll trigger point (in pixels)
     const sloganTrigger = 200;
-    const nextSectionTrigger = 350;
+    const nextSectionTrigger = 300;
 
     // Hide the top section and show the brand name
     // Hide the top section and show the brand name
@@ -39,7 +39,7 @@ window.addEventListener('scroll', function () {
 
     // Show the slogan
     if (scrollPosition > sloganTrigger) {
-        slogan.style.top = '28vh'; // Adjust based on desired position
+        slogan.style.top = '25vh'; // Adjust based on desired position
         slogan.style.opacity = 1;
 
         console.log('Slogan Section Triggered')

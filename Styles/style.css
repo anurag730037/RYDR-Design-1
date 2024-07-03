@@ -113,8 +113,8 @@ a {
 @media (max-width: 970px) {
     .home-parent {
         gap: 10px;
-        flex-direction: column;
-        align-items: baseline;
+        flex-direction: column !important;
+        align-items: baseline !important;
         padding: 20px;
     }
 }

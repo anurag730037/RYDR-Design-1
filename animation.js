@@ -39,7 +39,7 @@ window.addEventListener('scroll', function () {
 
     // Show the slogan
     if (scrollPosition > sloganTrigger) {
-        slogan.style.top = '25vh'; // Adjust based on desired position
+        slogan.style.top = '28vh'; // Adjust based on desired position
         slogan.style.opacity = 1;
 
         console.log('Slogan Section Triggered')

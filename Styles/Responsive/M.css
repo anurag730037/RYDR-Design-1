@@ -34,7 +34,7 @@
     }
 
     .side-text {
-        padding: 0 15px;
+        padding: 20px 15px;
     }
 
     .home-section {
@@ -64,8 +64,8 @@
     }
 
     .home-points {
-        font-size: 17px;
-        padding: 25px 10px;
+        font-size: 15px;
+        padding: 13px 10px;
     }
 
     .btn-sec a {

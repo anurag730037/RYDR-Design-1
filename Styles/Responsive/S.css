@@ -80,7 +80,7 @@
     /* SAFETY  */
     .safety-page-top {
         padding-bottom: 0;
-        padding: 40px 0px;
+        padding: 60px 0px;
         justify-content: start;
     }
 
@@ -134,7 +134,7 @@
         justify-content: flex-start;
         margin-bottom: 0;
         text-align: center;
-        padding: 20px 19px;
+        padding: 80px 19px;
         padding-bottom: 0px;
     }
 
@@ -221,22 +221,22 @@
 @media (max-width:410px) {
 
     .line-1 {
-        font-size: 26px;
+        font-size: 23px;
         line-height: 35px;
     }
 
     .line-2 {
-        font-size: 27px;
+        font-size: 25px;
         line-height: 35px;
     }
 
     .line-2 {
-        font-size: 27px;
+        font-size: 23px;
         line-height: 35px;
     }
 
     .line-4 {
-        font-size: 27px;
+        font-size: 25px;
         line-height: 35px;
     }
 

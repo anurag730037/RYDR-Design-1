@@ -24,6 +24,7 @@
     }
 
     .home-text {
+        margin: 20px;
         position: static;
         left: auto;
     }
@@ -134,7 +135,7 @@
         justify-content: flex-start;
         margin-bottom: 0;
         text-align: center;
-        padding: 80px 19px;
+        padding: 10px 19px;
         padding-bottom: 0px;
     }
 

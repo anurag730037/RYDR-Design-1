@@ -110,7 +110,7 @@ a {
     }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 991px) {
     .home-parent {
         gap: 10px;
         flex-direction: column !important;

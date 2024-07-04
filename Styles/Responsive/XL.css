@@ -37,7 +37,7 @@
 
 
     .home-section {
-        height: 80vh;
+        height: 100vh;
     }
 
     .line-1 {
@@ -78,6 +78,14 @@
         letter-spacing: -0.02em;
         text-align: left;
         padding: 39px 11px;
+    }
+
+    .btn-sec {
+        background-color: white;
+        border: none;
+        font-size: 35px;
+        font-weight: 500;
+        cursor: pointer;
     }
 
     .safety-img img {

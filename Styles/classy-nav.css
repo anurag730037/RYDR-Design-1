@@ -73,7 +73,7 @@ img {
 
 .classy-navbar {
   width: 100%;
-  height: 80px;
+  height: 60px;
   padding: 0.5em 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,6 +82,7 @@ img {
   -ms-flex-align: center;
   -ms-grid-row-align: center;
   align-items: center;
+  border-bottom: 1px solid rgb(179, 177, 177);
 }
 
 .classy-navbar .nav-brand {

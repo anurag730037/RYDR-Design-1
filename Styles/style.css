@@ -133,7 +133,7 @@ a {
 
 .classy-nav-container .classy-navbar .classynav ul li a:focus,
 .classy-nav-container .classy-navbar .classynav ul li a:hover {
-    font-size: 23px !important;
+    font-size: 19px !important;
     color: #383838;
     font-weight: 600;
 }
@@ -228,9 +228,9 @@ a {
     justify-content: flex-start;
     align-items: center;
     background-color: #c30000;
-    padding: 280px 50px;
-    margin-top: 80px;
-    height: 60vh;
+    padding: 300px 50px;
+    margin-top: 60px;
+    height: 80vh;
 }
 
 .home-text {
@@ -361,7 +361,7 @@ a {
 }
 
 .points img {
-    /* max-width: min-content; */
+    max-width: min-content;
     width: 70px;
 }
 

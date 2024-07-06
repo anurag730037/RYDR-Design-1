@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     };
 
-    fetch("https://dmrcuat.autope.in:9000/rydr/v1/driver/checkDocStatus", {
+    fetch("http://34.93.164.215:9000/rydr/v1/driver/checkDocStatus", {
       method: "POST",
       headers,
       body: JSON.stringify(dataBody),
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const completeProfile = () => {
-    fetch("https://dmrcuat.autope.in:9000/rydr/v1/driver/details", {
+    fetch("http://34.93.164.215:9000/rydr/v1/driver/details", {
       method: "GET",
       headers,
     })
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
         state: document.getElementById("state").value,
       };
 
-      fetch("https://dmrcuat.autope.in:9000/rydr/v1/driver/update-profile", {
+      fetch("http://34.93.164.215:9000/rydr/v1/driver/update-profile", {
         method: "POST",
         headers,
         body: JSON.stringify(profileData),
@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById(
           "driving-license-next"
         ).innerHTML = `<span class="spinner-border text-danger" role="status" />`;
-        fetch("https://dmrcuat.autope.in:9000/rydr/v1/payout/verifyDL", {
+        fetch("http://34.93.164.215:9000/rydr/v1/payout/verifyDL", {
           method: "POST",
           headers,
           body: JSON.stringify({
@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", function () {
               /* --------DL Photo Auto Loaded----------- */
 
               //   fetch(
-              //     "https://dmrcuat.autope.in:9000/rydr/v1/driver/get-document/DL",
+              //     "http://34.93.164.215:9000/rydr/v1/driver/get-document/DL",
               //     {
               //       method: "GET",
               //       headers,
@@ -495,7 +495,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   formData.append("documentFront", front_DL);
                   formData.append("documentBack", back_DL);
 
-                  fetch("https://dmrcuat.autope.in:9000/rydr/v1/driver/upload", {
+                  fetch("http://34.93.164.215:9000/rydr/v1/driver/upload", {
                     method: "POST",
                     headers: {
                       Authorization: `Bearer ${localStorage.getItem(

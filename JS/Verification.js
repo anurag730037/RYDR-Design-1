@@ -19,7 +19,7 @@ const GETOTP = () => {
     };
 
     // API call to send OTP using Fetch
-    fetch('http://34.93.164.215:9000/rydr/v1/driver/verify-mobile', {
+    fetch('https://dmrcuat.autope.in:9000/rydr/v1/driver/verify-mobile', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -49,7 +49,7 @@ const GETOTP = () => {
 
 // Fetch Cities Was Here
 const fetchCities = () => {
-    fetch('http://34.93.164.215:9000/rydr/v1/serviceableCities/city-list')
+    fetch('https://dmrcuat.autope.in:9000/rydr/v1/serviceableCities/city-list')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -87,7 +87,7 @@ const SUBMITOTP = () => {
     };
 
     // Fetch API call to verify OTP
-    fetch('http://34.93.164.215:9000/rydr/v1/otp/verify', {
+    fetch('https://dmrcuat.autope.in:9000/rydr/v1/otp/verify', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

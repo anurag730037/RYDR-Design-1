@@ -1,5 +1,5 @@
 // const fetchCities = () => {
-//     fetch('http://34.93.164.215:9000/rydr/v1/serviceableCities/city-list')
+//     fetch('https://dmrcuat.autope.in:9000/rydr/v1/serviceableCities/city-list')
 //         .then(response => {
 //             if (!response.ok) {
 //                 throw new Error('Network response was not ok');
@@ -37,7 +37,7 @@
 //     };
 
 //     // Fetch API call to verify OTP
-//     fetch('http://34.93.164.215:9000/rydr/v1/driver/update-profile', {
+//     fetch('https://dmrcuat.autope.in:9000/rydr/v1/driver/update-profile', {
 //         method: 'POST',
 //         headers: {
 //             'Content-Type': 'application/json',
@@ -86,7 +86,7 @@
 //         module: "vehicle-type"
 //     }
 
-//     fetch('http://34.93.164.215:9000/rydr/v1/splash/splashScreen', {
+//     fetch('https://dmrcuat.autope.in:9000/rydr/v1/splash/splashScreen', {
 //         method: 'POST',
 //         headers: {
 //             'Content-Type': 'application/json',
@@ -140,7 +140,7 @@
 //     };
 
 //     // Fetch API call to verify OTP
-//     fetch('http://34.93.164.215:9000/rydr/v1/driver/update-profile', {
+//     fetch('https://dmrcuat.autope.in:9000/rydr/v1/driver/update-profile', {
 //         method: 'POST',
 //         headers: {
 //             'Content-Type': 'application/json',

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <!-- RESPONSIVE CSS  -->
-    <!-- <link rel="stylesheet" href="animation.css"> -->
+    <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="Styles/Responsive/XL.css">
     <link rel="stylesheet" href="Styles/Responsive/L.css">
     <link rel="stylesheet" href="Styles/Responsive/M.css">
@@ -104,18 +104,17 @@
                                                     with us</a></li>
                                             <li class="text-decoration-none nav-items"><a href="about_us.html">About
                                                     Us</a></li>
-                                            <li class="text-decoration-none nav-items"><a href="initiatives.html">Our
-                                                    Initiatives</a></li>
+                                            <!-- <li class="text-decoration-none nav-items"><a href="initiatives.html">Our
+                                                    Initiatives</a></li> -->
                                         </ul>
                                     </div>
-
                                     <!-- <div>|</div> -->
 
-                                    <div class="login-register-btn mx-3" data-toggle="modal"
+                                    <div class="login-register-btn mx-3" data-toggle="modal" id="loginButton"
                                         data-target="#customer-login">
-                                        <a href="login.html">
+                                        <!-- <a href="login.html">
                                             <div class="log-in">Log In</div>
-                                        </a>
+                                        </a> -->
                                     </div>
                                 </div>
                             </div>
@@ -140,24 +139,27 @@
                         </div>
                         <div class="rydr-btn">
                             <div class="btn-1 ">
-                                <a href=""> <button class="btn-sec ">Download App</button></a>
+                                <a
+                                    href="https://play.google.com/store/apps/details?id=com.rapido.passenger&hl=en&pli=1">
+                                    <button class="btn-sec ">DOWNLOAD APP</button></a>
                             </div>
-                            <div class="btn-2 ">
-                                <a href=""> <button class="btn-sec ">Signup As Driver</button></a>
+                            <div class="btn-1" id="signup-driver">
+                                <a href="login.html"> <button class="btn-sec">SignUp as Driver</button></a>
                             </div>
+
                         </div>
                     </div>
                     <div class="title-img">
-                        <img src="Images/Title-img.png" alt="">
+                        <img src="Images/new_home.png" alt="">
                     </div>
                 </div>
 
-                <!-- <div id="rydr-brand">RYDR</div>
+                <div id="rydr-brand">RYDR</div>
                 <div id="slogan" class="slogan">Seamless Last Mile Rides for Delhi Metro Commuters</div> -->
 
 
-                <!-- <section class="d-flex justify-content-center align-items-center nextSection" id="nextSection1"> -->
-                <section class="d-flex justify-content-center align-items-center">
+                <section class="d-flex justify-content-center align-items-center nextSection" id="nextSection1">
+                    <!-- <section class="d-flex justify-content-center align-items-center"> -->
                     <div class=" moto-section d-flex justify-content-center align-items-center flex-column ">
 
                         <div>
@@ -166,7 +168,11 @@
 
                         <div class="motos ">
                             <div class="  moto-part">
-                                <div class=""><img class="moto-img" src="Images/Reducing.png" alt=""></div>
+                                <div class="d-flex">
+                                    <img class="moto-img" src="Images/Reducing.png" alt="">
+                                    <!-- <img class="curve" src="Images/curve_2.png" alt=""> -->
+                                    <img class="curve-1" src="Images/vector_curve.png" alt="">
+                                </div>
                                 <div class="mt-3 moto-head">
                                     <h2 class="under-sub-heading">Reducing Emissions</h2>
                                 </div>
@@ -178,12 +184,16 @@
                                         contribute in reducing carbon emission by booking a ride with us.</p>
                                 </div>
                                 <div>
-                                    <button class="know-more">Know More</button>
+                                    <!-- <button class="know-more">Know More</button> -->
                                 </div>
                             </div>
 
                             <div class=" moto-part">
-                                <div><img class="moto-img" src="Images/empowered.png" alt=""></div>
+                                <div class="d-flex">
+                                    <img class="moto-img" src="Images/empowered.png" alt="">
+                                    <!-- <img class="curve-2" src="Images/curve_2.png" alt=""> -->
+                                    <img class="curve-2" src="Images/vector_curve.png" alt="">
+                                </div>
                                 <div class="mt-3 moto-head">
                                     <h2 class="under-sub-heading">Empowered Women & Men</h2>
                                 </div>
@@ -195,7 +205,7 @@
                                         comfortable and green journey every time.</p>
                                 </div>
                                 <div>
-                                    <button class="know-more">Know More</button>
+                                    <!-- <button class="know-more">Know More</button> -->
                                 </div>
                             </div>
 
@@ -210,7 +220,7 @@
                                         by rendering green ride-sharing services.</p>
                                 </div>
                                 <div>
-                                    <button class="know-more">Know More</button>
+                                    <!-- <button class="know-more">Know More</button> -->
                                 </div>
                             </div>
                         </div>
@@ -268,7 +278,7 @@
                 <section class="why-choose-section section-margin">
 
                     <div>
-                        <h2 class="why-choose-heading">WHY CHOOSE US</h2>
+                        <h2 class="why-choose-heading ">WHY CHOOSE US</h2>
                     </div>
 
                     <div class=" why-choose-content">
@@ -279,7 +289,7 @@
                         <div class=" why-choose-div">
                             <div class="points">
                                 <div>
-                                    <img src="Images/no-cancellation.png" alt="">
+                                    <img src="Images/Choose_1.png" alt="">
                                 </div>
                                 <div class=" points-desc">
                                     <p><strong>No Cancellation</strong></p>
@@ -291,7 +301,8 @@
 
                             <div class="points">
                                 <div>
-                                    <img src="Images/women.png" alt="">
+                                    <img src="Images/Choose_2.png" alt="">
+
                                 </div>
                                 <div class="points-desc">
                                     <p><strong>Women & Men Drivers </strong></p>
@@ -303,7 +314,7 @@
 
                             <div class="points">
                                 <div>
-                                    <img src="Images/flat.png" alt="">
+                                    <img src="Images/Choose_3.png" alt="">
                                 </div>
                                 <div class=" points-desc">
                                     <p><strong>Flat Pricing </strong></p>
@@ -314,7 +325,7 @@
 
                             <div class="points">
                                 <div>
-                                    <img src="Images/zero.png" alt="">
+                                    <img src="Images/choose_4.png" alt="">
                                 </div>
                                 <div class=" points-desc">
                                     <p><strong>Zero Emission</strong></p>
@@ -350,7 +361,8 @@
                                         <div
                                             class="card-body d-flex justify-content-start align-items-center flex-column">
                                             <h5 class="card-title">Easy Pick & Drop</h5>
-                                            <p class="card-text">Pick you up from any Metro Station and Drop you at your
+                                            <p class="card-text">The only Service Dedicated to Pick you up from any
+                                                Metro Station and Drop you at your
                                                 destination and Vice-Versa.</p>
                                         </div>
                                     </div>
@@ -380,34 +392,43 @@
                                     <div class="card d-flex justify-content-center align-items-center flex-column">
                                         <img class="card-img-top" src="Images/Easy-pick.png" alt="Card image cap">
                                         <div class="card-body d-flex justify-content-start  flex-column">
-                                            <h5 class="card-title">Easy Pick & Drop</h5>
-                                            <p class="card-text">Pick you up from any Metro Station and Drop you at your
-                                                destination and Vice-Versa.</p>
+                                            <h5 class="card-title">FlexDrive & MaxProfit</h5>
+                                            <p class="card-text">Make money on your
+                                                chosen schedule with
+                                                rides or deliveries or
+                                                both. You can use your
+                                                own vehicle or choose a
+                                                rental through Rydr.</p>
                                         </div>
                                     </div>
                                     <div class="card d-flex justify-content-center align-items-center flex-column">
                                         <img class="card-img-top" src="Images/low-cost.png" alt="Card image cap">
                                         <div class="card-body d-flex justify-content-start flex-column">
-                                            <h5 class="card-title">Low Cost Rides</h5>
-                                            <p class="card-text">Rides available at a very attractive rates. Low surge
-                                                charges and no hidden cost. Pay before you start the ride.</p>
+                                            <h5 class="card-title">Fast and On Time Payments</h5>
+                                            <p class="card-text">Get Weekly Payments
+                                                directly in your bank
+                                                accounts.</p>
                                         </div>
                                     </div>
                                     <div class="card d-flex justify-content-center align-items-center flex-column">
                                         <img class="card-img-top" src="Images/assured.png" alt="Card image cap">
                                         <div class="card-body d-flex justify-content-start  flex-column">
-                                            <h5 class="card-title">Assured Rides</h5>
-                                            <p class="card-text">Get assured rides from any metro station to your
-                                                destination and vice versa, in least time.</p>
+                                            <h5 class="card-title">24/7 Support Available</h5>
+                                            <p class="card-text">You can reach us
+                                                anytime for any
+                                                support necessary.</p>
                                         </div>
                                     </div>
                                     <div class="card d-flex justify-content-center align-items-center flex-column">
                                         <img class="card-img-top" src="Images/assured.png" alt="Card image cap">
                                         <div class="card-body d-flex justify-content-start  flex-column">
-                                            <h5 class="card-title">Safe rides</h5>
-                                            <p class="card-text">Experience safe and secure rides with our verified
-                                                drivers and safety measures in
-                                                place.</p>
+                                            <h5 class="card-title">Insured Rides And Coverage</h5>
+                                            <p class="card-text">All rides are insured.
+                                                Accidental coverage
+                                                and medical benefits
+                                                covered up to Rs ___
+                                                Lakh for Driver &
+                                                family.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -421,16 +442,16 @@
                     <div class="safety-section ">
                         <div class="safety-content  col-lg-6 col-md-6 ">
 
-                            <h2 class="sub-heading mt-4">SAFETY FOR ALL</h2>
+                            <h2 class="sub-heading mt-3">SAFETY FOR ALL</h2>
 
-                            <p class="safety-text">Rydr is more than just a ride-sharing platform. It’s a movement
-                                dedicated to providing
-                                safe,
-                                reliable and empowering transportation for women. Our 100% electric vehicles fleet,
-                                driven
-                                by women for women and by men for all, ensures a secure, comfortable and green journey
-                                every
-                                time.</p>
+                            <p class="safety-text">At Rydr, well being of our customers is above
+
+                                everything else. We are constantly in pursuit of
+
+                                enhancing our safety measures to ensure every
+                                Rydr
+
+                                ride ia a pleasant and comfortable experience.</p>
 
                         </div>
 
@@ -450,16 +471,13 @@
             </main>
         </section>
 
-        <footer class="footer">
+        <footer class="">
             <div class="">
-                <div class="row footer-section">
+                <div class="footer-section">
 
-                    <div class="col-lg-4 col-md-4 col-6">
-                        <div class="footer-logo">
-                            <img src="Images/new-logo.png" alt="Logo">
-                        </div>
+                    <div class="col-lg-6 col-md-6 col-12 d-flex flex-row justify-content-around footer-apps">
                         <div class="download-app">
-                            <p>Download Our App</p>
+                            <p>Download Customer App</p>
                             <div class="app-links">
                                 <a href="playstore-link"><img src="Images/Google_Play_Store_badge_EN.svg.png"
                                         alt="Play Store"></a>
@@ -467,74 +485,59 @@
                                         alt="Apple Store"></a>
                             </div>
                         </div>
-                        <div class="social-links mt-3">
-                            <a href="facebook-link"><img src="Images/Facebook.png" alt=""></a>
-                            <a href="twitter-link"><img src="Images/Twitter.png" alt=""></a>
-                            <a href="instagram-link"><img src="Images/Instagram.png" alt=""></a>
+                        <div class="download-app">
+                            <p>Download Driver App</p>
+                            <div class="app-links">
+                                <a href="playstore-link"><img src="Images/Google_Play_Store_badge_EN.svg.png"
+                                        alt="Play Store"></a>
+                                <a href="applestore-link"><img src="Images/App_Store_Badge.svg (2).png"
+                                        alt="Apple Store"></a>
+                            </div>
                         </div>
+
                     </div>
 
 
-                    <div class="col-lg-2 col-md-2 col-6">
+                    <div class="col-lg-2 col-md-2 col-6 shortcuts">
                         <h5 class="footer-heading">Shortcuts</h5>
-                        <ul class="list-unstyled">
+                        <div class="list-unstyled">
                             <li><a class="direct-links" href="index.html">Home</a></li>
                             <li><a class="direct-links" href="safety.html">Safety</a></li>
                             <li><a class="direct-links" href="drive_with_us.html">Drive with Us</a></li>
-
+                            <li><a class="direct-links" href="about_us.html">Career</a></li>
                             <li><a class="direct-links" href="about_us.html">About Us</a></li>
                             <li><a class="direct-links" href="initiatives.html">Initiatives</a></li>
                             <li><a class="direct-links" href="faq.html">FAQ</a></li>
-                        </ul>
+                        </div>
                     </div>
-
                     <div class="col-lg-3 col-md-3 add-sec col-6">
                         <h5 class="footer-heading">Address</h5>
 
                         <div class="add-div">
-                            <p><strong class="add">Registered Office:</strong><br>
-                                737-738, 7 Floor, Mall of Jaipur, Gandhi Path, W B Block, Vaishali Nagar,
-                                Jaipur, Raj 302021
-                                <br>
-                                Email: reachus@rydr.co.in<br>
+                            737-738, 7 Floor, Mall of Jaipur, Gandhi Path,
+                            <br> W B Block, Vaishali Nagar,
+                            <br> Jaipur, Raj 302021
+
                             </p>
-                            <p><strong class="add">Branch Office:</strong><br>
-                                G 148 First Floor South City 2, Gurugram, Haryana 122018 <br>
-                                Email: reachus@rydr.co.in</p>
                         </div>
+
 
                     </div>
 
 
-                    <div class="col-lg-3 col-md-3 col-6 d-flex  flex-column align-item-center contact-sec">
-                        <div>
-                            <h5 class="footer-heading">Contact Us</h5>
-                        </div>
-                        <div>
-                            <form class="contact-form contact-div">
-                                <input type="text" class="form-control" placeholder=" Name" id="connect-name" required>
-                                <input type="number" class="form-control" placeholder=" Phone" required name=""
-                                    id="connect-phone">
-                                <input type="email" class="form-control" placeholder="Email" id="connect-email"
-                                    required>
-                                <textarea class="form-control" rows="3" placeholder=" Message" id="connect-message"
-                                    required></textarea>
-                                <button type="submit" class="btn log-in contact-btn"
-                                    id="contact-submit">Contact</button>
-                            </form>
-                        </div>
-                    </div>
+
                 </div>
-                <div class="footer-bottom row">
+                <div class="footer-bottom ">
 
-                    <div class="col-lg-5 col-md-5">
-                        <p>© 2024 @ First And Last Mile Connectivity India PVT. Limited. All Rights Reserved.</p>
+                    <div class="">
+                        <p class="fw-bold">© 2024 @ First And Last Mile Connectivity India PVT. Limited. All Rights
+                            Reserved.</p>
                     </div>
 
-                    <div class="col-lg-5 col-md-5 col-12 text-md-right footer-end">
-                        <a href="privacy-policy-link">Privacy Policy</a>
-                        <span> | </span>
-                        <a href="terms-conditions-link">Terms & Conditions</a>
+                    <div class="social-links mt-2 mb-2">
+                        <a href="facebook-link"><img class="socialImg" src="Images/Facebook.png" alt=""></a>
+                        <a href="twitter-link"><img class="socialImg" src="Images/Twitter.png" alt=""></a>
+                        <a href="instagram-link"><img class="socialImg" src="Images/Instagram.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -544,14 +547,55 @@
     </div>
 
 
+    <script src="JS/ProfileButton.js"></script>
+
+    <script>
+
+        var token = localStorage.getItem('accessToken')
+        var cityName = localStorage.getItem('cityName')
+        var vehicle = localStorage.getItem('vehicleType')
+        let htmlPage = ''
+        var signUpbuttonName = ''
+
+        console.log(token)
+
+
+        if (token && token.length > 0 && cityName && cityName.length > 0 && vehicle && vehicle.length > 0) {
+            // window.location.href = 'oldRegistration.html'
+            htmlPage = 'oldRegistration.html'
+        }
+        else if (token && token.length > 0 && !cityName) {
+            // window.location.href = 'SelectCities.html'
+            htmlPage = 'SelectCities.html'
+        }
+        else if (token && token.length > 0 && !vehicle) {
+            // window.location.href = 'SelectVehicle.html'
+            htmlPage = 'SelectVehicle.html'
+        }
+        else if (!token) {
+            // window.location.href = 'login.html'
+            htmlPage = 'login.html'
+        }
+
+
+        if (token) {
+            signUpbuttonName = `<a href="${htmlPage}"><button class="btn-sec" id="signup-driver">
+                                 SIGNUP AS DRIVER</button></a>`
+        }
+        else {
+            signUpbuttonName = `<a href="login.html"><button class="btn-sec" id="signup-driver">
+                                 SIGNUP AS DRIVER</button></a>`
+        }
+
+        document.getElementById('signup-driver').innerHTML = signUpbuttonName
+    </script>
+
+
     <script src="animation.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="JS/contact-form.js"></script>
     <script src="JS/popper.min.js"></script>
-
-
     <script src="JS/uza.bundle.js"></script>
-
     <script src="JS/active.js"></script>
 
 
@@ -560,7 +604,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
     <script src="JS/CustAndDriver.js"></script>
 
-    <script>
+    <!-- <script>
         window.addEventListener('DOMContentLoaded', function () {
             var token = localStorage.getItem('accessToken')
             var cityName = localStorage.getItem('cityName')
@@ -568,8 +612,8 @@
             let htmlPage = ''
             var buttonName = ''
             if (token && token.length > 0 && cityName && cityName.length > 0 && vehicle && vehicle.length > 0) {
-                // window.location.href = 'registration.html'
-                htmlPage = 'registration.html'
+                // window.location.href = 'oldRegistration.html'
+                htmlPage = 'oldRegistration.html'
             }
             else if (token && token.length > 0 && !cityName) {
                 // window.location.href = 'SelectCities.html'
@@ -595,7 +639,7 @@
             }
             document.getElementById('loginButton').innerHTML = buttonName
         })
-    </script>
+    </script> -->
 
 </body>
 

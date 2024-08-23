@@ -1,4 +1,4 @@
-/* .topSection {
+.topSection {
     opacity: 1;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
@@ -12,7 +12,7 @@
     color: #c30000 !important;
     z-index: 1000;
     transition: opacity 1s ease-in-out, transform 3s ease-in-out;
-    height: 50vh;
+    height: 57vh;
     font-size: 150px;
     font-weight: 700;
     text-align: left;
@@ -78,7 +78,7 @@
 
     to {
         opacity: 1;
-        transform: translate(-50%, -190%) scale(1);
+        transform: translate(-50%, -180%) scale(1);
 
     }
 }
@@ -107,4 +107,3 @@
     position: relative;
     overflow: hidden;
 }
- */

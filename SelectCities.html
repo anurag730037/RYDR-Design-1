@@ -84,19 +84,19 @@
                                                 with us</a></li>
                                         <li class="text-decoration-none nav-items"><a href="about_us.html">About
                                                 Us</a></li>
-                                        <li class="text-decoration-none nav-items"><a href="initiatives.html">Our
-                                                Initiatives</a></li>
+                                        <!-- <li class="text-decoration-none nav-items"><a href="initiatives.html">Our
+                                                Initiatives</a></li> -->
                                     </ul>
                                 </div>
 
                                 <!-- <div>|</div> -->
 
-                                <div class="login-register-btn mx-3" data-toggle="modal" data-target="#customer-login">
+                                <!-- <div class="login-register-btn mx-3" data-toggle="modal" data-target="#customer-login">
                                     <a href="">
 
                                         <div class="log-in">HI</div>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </nav>
@@ -107,21 +107,21 @@
 
     <main>
 
-        <section class="log-sec">
-            <div class="login-div">
+        <section class="log-sec flex-column justify-content-center">
+            <div class="login-div" style="margin-bottom: 50px;">
 
                 <div id="choose_city" style="display: block;">
                     <div class="rydr-contact-form">
 
                         <div class="container contact-heading mb-30">
-                            <h4 class="text-center">Select City !</h4>
-                            <p>Which city do you want to ride?</p>
+                            <h4 class="text-center mob" style="padding: 25px;">Select City !</h4>
+                            <p class="mb-4" style="color: whitesmoke;">Which city do you want to ride?</p>
                         </div>
                         <div class="container">
                             <div class="wrap">
                                 <form action="#" class="d-flex flex-row justify-content-around">
-                                    <select class="select city mb-30" name="city" id="city"></select>
-                                    <button type="button" value="" id="" class=" reg-but "
+                                    <select class="select city mb-30 " name="city" id="city"></select>
+                                    <button type="button" value="" id="" class=" otp-btn "
                                         onclick="cityNext()">Next</button>
                                 </form>
                             </div>
@@ -130,9 +130,15 @@
                 </div>
 
 
+            </div>
 
+            <div class="d-flex justify-content-center mt-5 mb-5">
+                <button class="reg-but" onclick="logout()">
+                    Logout <i class="fa fa-arrow-right-from-bracket"></i>
+                </button>
             </div>
-            </div>
+
+
         </section>
 
 
@@ -144,16 +150,13 @@
     </main>
 
 
-    <footer class="footer">
+    <footer class="">
         <div class="">
-            <div class="row footer-section">
+            <div class="footer-section">
 
-                <div class="col-lg-4 col-md-4 col-6">
-                    <div class="footer-logo">
-                        <img src="Images/new-logo.png" alt="Logo">
-                    </div>
+                <div class="col-lg-6 col-md-6 col-12 d-flex flex-row justify-content-around footer-apps">
                     <div class="download-app">
-                        <p>Download Our App</p>
+                        <p>Download Customer App</p>
                         <div class="app-links">
                             <a href="playstore-link"><img src="Images/Google_Play_Store_badge_EN.svg.png"
                                     alt="Play Store"></a>
@@ -161,72 +164,59 @@
                                     alt="Apple Store"></a>
                         </div>
                     </div>
-                    <div class="social-links mt-3">
-                        <a href="facebook-link"><img src="Images/Facebook.png" alt=""></a>
-                        <a href="twitter-link"><img src="Images/Twitter.png" alt=""></a>
-                        <a href="instagram-link"><img src="Images/Instagram.png" alt=""></a>
+                    <div class="download-app">
+                        <p>Download Driver App</p>
+                        <div class="app-links">
+                            <a href="playstore-link"><img src="Images/Google_Play_Store_badge_EN.svg.png"
+                                    alt="Play Store"></a>
+                            <a href="applestore-link"><img src="Images/App_Store_Badge.svg (2).png"
+                                    alt="Apple Store"></a>
+                        </div>
                     </div>
+
                 </div>
 
 
-                <div class="col-lg-2 col-md-2 col-6">
-                    <h5 class="footer-heading">Shortcuts</h5>
-                    <ul class="list-unstyled">
+                <div class="col-lg-2 col-md-2 col-6 shortcuts">
+                    <h5 class="footer-heading Shortcuts">Shortcuts</h5>
+                    <div class="list-unstyled">
                         <li><a class="direct-links" href="index.html">Home</a></li>
                         <li><a class="direct-links" href="safety.html">Safety</a></li>
                         <li><a class="direct-links" href="drive_with_us.html">Drive with Us</a></li>
-
+                        <li><a class="direct-links" href="about_us.html">Career</a></li>
                         <li><a class="direct-links" href="about_us.html">About Us</a></li>
                         <li><a class="direct-links" href="initiatives.html">Initiatives</a></li>
                         <li><a class="direct-links" href="faq.html">FAQ</a></li>
-                    </ul>
+                    </div>
                 </div>
-
                 <div class="col-lg-3 col-md-3 add-sec col-6">
                     <h5 class="footer-heading">Address</h5>
 
                     <div class="add-div">
-                        <p><strong class="add">Registered Office:</strong><br>
-                            737-738, 7 Floor, Mall of Jaipur, Gandhi Path, W B Block, Vaishali Nagar,
-                            Jaipur, Raj 302021
-                            <br>
-                            Email: reachus@rydr.co.in<br>
+                        737-738, 7 Floor, Mall of Jaipur, Gandhi Path,
+                        <br> W B Block, Vaishali Nagar,
+                        <br> Jaipur, Raj 302021
+
                         </p>
-                        <p><strong class="add">Branch Office:</strong><br>
-                            G 148 First Floor South City 2, Gurugram, Haryana 122018 <br>
-                            Email: reachus@rydr.co.in</p>
                     </div>
+
 
                 </div>
 
 
-                <div class="col-lg-3 col-md-3 col-6 d-flex  flex-column align-item-center contact-sec">
-                    <div>
-                        <h5 class="footer-heading">Contact Us</h5>
-                    </div>
-                    <div>
-                        <form class="contact-form contact-div">
-                            <input type="text" class="form-control" placeholder=" Name" id="connect-name" required>
-                            <input type="number" class="form-control" placeholder=" Phone" required name=""
-                                id="connect-phone">
-                            <input type="email" class="form-control" placeholder="Email" id="connect-email" required>
-                            <textarea class="form-control" rows="3" placeholder=" Message" id="connect-message"
-                                required></textarea>
-                            <button type="submit" class="btn log-in contact-btn" id="contact-submit">Contact</button>
-                        </form>
-                    </div>
-                </div>
+
             </div>
-            <div class="footer-bottom row">
+            <div class="footer-bottom ">
 
-                <div class="col-lg-5 col-md-5">
-                    <p>© 2024 @ First And Last Mile Connectivity India PVT. Limited. All Rights Reserved.</p>
+                <div class="">
+                    <p class="fw-bold">© 2024 @ First And Last Mile Connectivity India PVT. Limited. All Rights
+                        Reserved.</p>
                 </div>
 
-                <div class="col-lg-5 col-md-5 col-12 text-md-right footer-end">
-                    <a href="privacy-policy-link">Privacy Policy</a>
-                    <span> | </span>
-                    <a href="terms-conditions-link">Terms & Conditions</a>
+                <div class="social-links mt-2 mb-2">
+                    <a href="facebook-link"><img class="socialImg" src="Images/Facebook.png" alt=""></a>
+                    <a href="twitter-link"><img class="socialImg" src="Images/Twitter.png" alt=""></a>
+                    <a href="instagram-link"><img class="socialImg" src="Images/Instagram.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -234,7 +224,13 @@
 
 
     </div>
-
+    <script>
+        const logout = () => {
+            console.log('Logout')
+            localStorage.clear();
+            window.location.href = 'index.html';
+        }
+    </script>
 
     <script>
         const fetchCities = () => {
@@ -279,7 +275,8 @@
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    "Authorization": `Bearer ${localStorage.getItem('accessToken')}`
+                    "Authorization": `Bearer ${localStorage.getItem('accessToken')}`,
+                    'key': localStorage.getItem("mobileNumber")
                 },
                 body: JSON.stringify(requestBody)
             })

@@ -55,8 +55,7 @@
                                                 with us</a></li>
                                         <li class="text-decoration-none nav-items"><a href="about_us.html">About
                                                 Us</a></li>
-                                        <li class="text-decoration-none nav-items"><a href="initiatives.html">Our
-                                                Initiatives</a></li>
+                                        
                                     </ul>
                                 </div>
 
@@ -159,9 +158,9 @@
                 </div>
 
                 <div class="col-lg-5 col-md-5 col-12 text-md-right footer-end">
-                    <a href="privacy-policy-link">Privacy Policy</a>
+                    <a href="privacy_policy.html">Privacy Policy</a>
                     <span> | </span>
-                    <a href="terms-conditions-link">Terms & Conditions</a>
+                    <a href="terms&conditions.html">Terms & Conditions</a>
                 </div>
             </div>
         </div>

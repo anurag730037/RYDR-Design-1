@@ -1,9 +1,10 @@
 @media (max-width: 1024px) {
 
     .btn-sec {
-        background-color: white;
+        /* background-color: white; */
         border: none;
-        font-size: 20px;}
+        font-size: 16px;
+    }
 
 
     .sub-heading {
@@ -11,7 +12,7 @@
         font-size: 45px;
         font-weight: 800;
         line-height: 102px;
-        letter-spacing: -0.02em;
+        letter-spacing: 0.02em;
         color: #c30000;
         margin-top: 30px;
         margin-bottom: 20px;
@@ -20,11 +21,12 @@
 
     .under-sub-heading {
         /* font-family: Plus Jakarta Sans; */
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
-        line-height: 20px;
-        letter-spacing: -0.02em;
+        line-height: 35px;
+        letter-spacing: 0.02em;
         text-align: center;
+
     }
 
     .home-section {
@@ -33,7 +35,6 @@
         position: relative;
         justify-content: flex-start;
         align-items: center;
-        background-color: #c30000;
         padding: 270px 50px;
         margin-top: 60px;
         height: auto;
@@ -45,12 +46,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        left: 2%;
+        left: 4%;
     }
 
     .title-img {
-        right: 5%;
-        width: 50%;
+        right: 0%;
+        width: 47%;
     }
 
     .line-1 {
@@ -91,6 +92,21 @@
     .btn-2 {
 
         padding: 8px 15px;
+    }
+
+    .curve-1 {
+        position: absolute;
+        width: 18%;
+        left: 26%;
+        margin-top: 20px;
+    }
+
+    .curve-2 {
+        position: absolute;
+        width: 18%;
+        left: 56%;
+
+        margin-top: 20px;
     }
 
     .moto-content p {
@@ -146,7 +162,7 @@
 
     .card-text {
         display: -webkit-box;
-        -webkit-line-clamp: 4;
+        -webkit-line-clamp: 6;
         /* Number of lines to show */
         -webkit-box-orient: vertical;
         overflow: hidden;
@@ -156,14 +172,15 @@
 
     .driver-part .card-title {
         font-size: 21px;
-        line-height: 40px;
+        line-height: 27px;
+        margin-bottom: 20px;
     }
 
     .driver-part .card-text {
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 400;
-        line-height: 32px;
-        letter-spacing: -0.03em;
+        line-height: 24px;
+        letter-spacing: 0.03em;
         text-align: center;
     }
 
@@ -174,8 +191,9 @@
 
     .safety-text {
         font-size: 20px;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 35px;
+        padding-left: 40px;
     }
 
     .safety-content .sub-heading {
@@ -194,15 +212,14 @@
     }
 
     .download-app p {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 500;
         line-height: 50px;
         letter-spacing: -0.02em;
-        text-align: left;
     }
 
     .app-links img {
-        width: 35%;
+        width: 85%;
         margin: 10px 5px;
     }
 
@@ -262,5 +279,25 @@
     .adv-card-title h5 {
         margin-top: 10px;
         font-size: 1.4rem;
+    }
+
+    .login-banner {
+        width: 40%;
+    }
+
+    .privacy-heading {
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 825px) {
+
+    .mob {
+        font-size: 20px !important;
+    }
+
+    .log-input {
+        width: 85%;
     }
 }

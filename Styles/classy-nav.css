@@ -73,7 +73,7 @@ img {
 
 .classy-navbar {
   width: 100%;
-  height: 60px;
+  height: 65px;
   padding: 0.5em 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,8 +101,8 @@ img {
 
 .classy-navbar .nav-brand:focus,
 .classy-navbar .nav-brand:hover {
-  font-size: 26px;
-  font-weight: 500;
+  /* font-size: 26px; */
+  /* font-weight: 500; */
 }
 
 .classynav ul li {
@@ -131,7 +131,7 @@ img {
 }
 
 .classynav ul li a {
-  padding: 0 12px;
+  padding: 0 25px;
   display: block;
   height: 35px;
   font-size: 14px;

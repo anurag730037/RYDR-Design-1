@@ -5,6 +5,10 @@
         font-size: 35px;
     }
 
+    .under-sub-heading {
+        font-size: 25px;
+    }
+
     .section-margin {
         margin: 0;
     }
@@ -20,13 +24,22 @@
         /* margin-bottom: 122px; */
         text-align: center;
         padding: 20px 25px;
+        margin-top: 30px;
         padding-bottom: 200px;
+    }
+
+    .title-img {
+        width: 53%;
     }
 
     .home-text {
         margin: 20px;
         position: static;
         left: auto;
+    }
+
+    .line-break {
+        display: block;
     }
 
     .title-img {
@@ -39,6 +52,18 @@
         flex-direction: column;
         justify-content: center;
         gap: 50px;
+    }
+
+    .moto-head {
+        height: 50px;
+    }
+
+    .curve-1 {
+        display: none;
+    }
+
+    .curve-2 {
+        display: none;
     }
 
     .why-choose-section {
@@ -58,12 +83,22 @@
         width: 100%;
     }
 
+    .why-choose-content {
+        gap: 0px;
+    }
+
     .card-text {
         font-size: 16px;
     }
 
     .driver-part .card-text {
         font-size: 16px;
+        padding: 0px 10px;
+    }
+
+    .driver-part .card-title {
+        font-size: 25px;
+        line-height: 35px;
     }
 
     .safety-section {
@@ -78,6 +113,11 @@
         align-items: center;
     }
 
+    .footer-heading {
+        text-align: center;
+        margin-top: 20px;
+    }
+
     /* SAFETY  */
     .safety-page-top {
         padding-bottom: 0;
@@ -85,13 +125,54 @@
         justify-content: start;
     }
 
+    .safety-page-top {
+        padding-bottom: 0;
+        padding: 27px 0px;
+        justify-content: start;
+        margin-top: 80px;
+    }
+
     .line-1,
     .line-2,
     .line-4,
     .line-3 {
-        font-size: 20px;
-        line-height: 25px;
-        padding: 10px;
+        line-height: 30px;
+        padding: 10px 0px;
+    }
+
+    .line-1,
+    .line-3 {
+        font-size: 18px;
+    }
+
+    .line-2,
+    .line-4 {
+        font-size: 25px;
+    }
+
+    .saf-1 {
+        font-size: 15px !important;
+        line-height: 20px !important;
+    }
+
+    .saf-2 {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
+    .saf-3 {
+        font-size: 15px !important;
+        line-height: 20px !important;
+    }
+
+    .saf-4 {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
+    .safety-text {
+
+        margin: 10px 25px;
     }
 
     .safety-page-text .side-text {
@@ -139,9 +220,11 @@
         text-align: center;
         padding: 10px 19px;
         padding-bottom: 0px;
+        margin-top: 80px;
     }
 
     .with-us-text {
+        margin: 5px;
         align-items: center;
     }
 
@@ -178,11 +261,51 @@
         justify-content: center;
     }
 
+    .log-input {
+        width: 70%;
+        font-size: 13px !important;
+    }
+
+    .otp-btn {
+        font-size: 13px;
+        border: 1px solid white;
+        padding: 7px 17px;
+    }
+
+    .login-banner {
+        display: none;
+    }
+
+    .login-div {
+        background: linear-gradient(180deg, #EE1414 0%, #930000 100%);
+        border-radius: 20px;
+        margin: 120px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        padding-bottom: 50px;
+    }
+
+    .mob {
+        font-size: 22px !important;
+    }
+
+    .log-input {
+        width: 80%;
+        font-size: 18px !important;
+    }
+
+    .accordion-button {
+        font-size: 1.1rem !important;
+    }
+
+    .about_dow_app p {
+        font-size: 25px;
+    }
 
 }
-
-
-
 
 
 @media (min-width: 431px) and (max-width: 575px) {
@@ -190,6 +313,18 @@
         left: 50%;
         transform: translateX(-50%);
         width: 35%;
+    }
+}
+
+@media (max-width: 400px) {
+    .mob {
+        font-size: 18px !important;
+    }
+
+    .log-input {
+        width: 80%;
+        font-size: 15px !important;
+        font-weight: 400 !important;
     }
 }
 
@@ -245,7 +380,8 @@
 
     .home-points {
         font-size: 16px;
-        padding: 20px 10px;
+        padding: 20px 0px;
+        padding-top: 0px;
     }
 
     .footer-bottom p {
@@ -278,6 +414,11 @@
         font-size: 30px;
     }
 
+    .moto-head {
+        margin-top: 0.9rem !important;
+        height: 45px;
+    }
+
     .moto-content p {
         text-align: justify;
     }
@@ -286,5 +427,15 @@
         font-size: 30px;
         font-weight: 700;
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 492px) {
+    .download-app p {
+        font-size: 13px;
+    }
+
+    .about_dow_app p {
+        font-size: 14px;
     }
 }

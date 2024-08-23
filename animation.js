@@ -53,6 +53,8 @@ window.addEventListener('scroll', function () {
         slogan.style.opacity = 0; // Hide slogan when next section appears
         rydrBrand.style.opacity = 0; // Hide RYDR brand
 
+
+
         console.log('Next Section Triggered')
         rydrBrand.style.animation = 'fadeOutZoomOut 1s forwards';
 

@@ -22,69 +22,71 @@
 
 
     .sub-heading {
-        font-size: 70px;
+        font-size: 55px;
+    }
+
+    .title-img {
+        width: 42%;
+    }
+
+    .why-choose-heading {
+        font-size: 55px;
     }
 
     .under-sub-heading {
-        font-size: 45px;
+        font-size: 37px;
     }
 
     .know-more {
-        font-size: 31px;
+        font-size: 25px;
 
         padding: 20px 40px
     }
 
 
     .home-section {
-        height: 100vh;
+        height: 94vh;
     }
 
     .line-1 {
-        color: white;
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 500;
         text-align: left;
     }
 
     .line-2 {
-        color: white;
-        font-size: 70px;
-        font-weight: 800;
+        font-size: 60px;
+        font-weight: 700;
         line-height: 80px;
         text-align: left;
     }
 
     .line-3 {
-        color: white;
-        font-size: 70px;
+        font-size: 60px;
         font-weight: 400;
         line-height: 80px;
         text-align: left;
     }
 
     .line-4 {
-        color: white;
-        font-size: 70px;
-        font-weight: 800;
+        font-size: 60px;
+        font-weight: 700;
         line-height: 80px;
         text-align: left;
     }
 
     .home-points {
-        color: white;
-        font-size: 40px;
-        font-weight: 600;
+        font-size: 35px;
+        font-weight: 700;
         letter-spacing: -0.02em;
         text-align: left;
         padding: 39px 11px;
     }
 
     .btn-sec {
-        background-color: white;
         border: none;
-        font-size: 35px;
-        font-weight: 500;
+        font-size: 30px;
+        font-weight: 400;
         cursor: pointer;
     }
 
@@ -93,12 +95,42 @@
 
     }
 
-    .moto-content p,
-    .card-text {
-        font-size: 22px;
-        line-height: 50px;
+    .curve {
+        width: 100%;
+        position: absolute;
+        left: 23.5%;
+
     }
 
+    .curve-2 {
+        /* margin-left: 10px; */
+        position: absolute;
+        /* z-index: -1; */
+        left: 53.5%;
+    }
+
+
+    .curve-1 {
+        transform: rotate(10deg);
+        position: absolute;
+        width: 22%;
+        left: 24%;
+        z-index: 1;
+    }
+
+    .curve-2 {
+        transform: rotate(10deg);
+        position: absolute;
+        width: 22%;
+        left: 54%;
+        z-index: 1;
+    }
+
+    .moto-content p,
+    .card-text {
+        font-size: 21px;
+        line-height: 40px;
+    }
 
     .points-desc p {
         font-size: 25px;
@@ -131,5 +163,23 @@
     .safety-card-title {
         font-weight: 800 !important;
         font-size: 30px !important;
+    }
+
+
+
+    .privacy-heading {
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+
+    .about_dow_app p {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .privacy-heading {
+        margin-top: 65px;
+        margin-bottom: 20px;
     }
 }

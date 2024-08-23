@@ -122,7 +122,7 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .classy-nav-container .classy-navbar .classynav ul li a {
         font-size: 14px;
-        padding: 0 10px;
+        padding: 0 15px;
     }
 }
 
@@ -439,6 +439,6 @@
 
 
 .classy-nav-container .classy-navbar .classynav ul li a:hover {
-    font-size: 21px !important;
+    /* font-size: 21px !important; */
     /* Increase font size on hover */
 }

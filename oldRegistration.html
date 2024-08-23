@@ -1,0 +1,952 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <!-- <link rel="stylesheet" href="./global.css" /> -->
+
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/classy-nav.css">
+
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- RESPONSIVE CSS  -->
+
+    <link rel="stylesheet" href="Styles/Responsive/XL.css">
+    <link rel="stylesheet" href="Styles/Responsive/L.css">
+    <link rel="stylesheet" href="Styles/Responsive/M.css">
+    <link rel="stylesheet" href="Styles/Responsive/S.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-23581568-13');
+    </script>
+
+
+    <style>
+        .icon-container {
+            margin-left: 10px;
+            display: flex;
+
+            align-items: center;
+        }
+
+        .accordion-button.success .icon-container {
+            color: rgb(6, 80, 6);
+        }
+
+        .accordion-button.error .icon-container {
+            color: #c30000;
+        }
+    </style>
+
+    <script src="JS/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <section>
+        <header class="header-area">
+            <div class="main-header-area">
+                <div class="classy-nav-container breakpoint-off">
+                    <nav class="classy-navbar justify-content-between" id="uzaNav">
+                        <a class="nav-brand" href="index.html"><img src="Images/new-logo.png" alt="Ryder Logo"></a>
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <div class="classy-menu">
+
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <div class="classynav">
+                                <div>
+                                    <ul id="nav" class="home-parent">
+                                        <li class=" text-decoration-none nav-items"><a href="./index.html">Home</a></li>
+                                        <li class=" text-decoration-none nav-items"><a href="safety.html">Safety</a>
+                                        </li>
+                                        <li class="text-decoration-none nav-items current-item"><a
+                                                href="Drive_with_us.html">Drive
+                                                with us</a></li>
+                                        <li class="text-decoration-none nav-items"><a href="about_us.html">About
+                                                Us</a></li>
+                                        <!-- <li class="text-decoration-none nav-items"><a href="initiatives.html">Our
+                                                Initiatives</a></li> -->
+                                    </ul>
+                                </div>
+
+                                <!-- <div>|</div> -->
+                                <!-- 
+                                <div class="login-register-btn mx-3" data-toggle="modal" data-target="#customer-login">
+                                    <a href="login.html">
+
+                                        <div class="log-in">Log In</div>
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <main>
+
+        <section>
+            <div class=" registraion-top home-section">
+                <div class=" home-text with-us-text">
+                    <div class="side-text drive-text">
+
+                        <!-- <span class="line-2">Become A</span><br> -->
+                        <span class="line-3  reg-line" style="font-weight: 700;">"Registration"</span><br>
+                        <!-- <span class="line-4">With Us</span> -->
+                    </div>
+
+                    <!-- <div class="btn-2 rydr-btn mt-5">
+                        <button class="btn-sec "><a href="">Registration</a></button>
+                    </div> -->
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="registrationForm">
+
+            <!-- <form id="main-form"> -->
+
+            <div class="container page-margin d-flex flex-column justify-content-center align-items-center ">
+                <h2 class="text-center sub-heading">Driver Registration</h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item mt-4">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed super-sub-points" type="button"
+                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                aria-controls="collapseOne">
+                                Profile Info
+                                <span class="icon-container" id="icon-headingOne"></span>
+                                <span class="remark"></span>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+
+                                <form id="profile-form">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="circle-profile-icon">
+                                            <input type="file" id="profile_image" name="profile_image" accept="image/*"
+                                                onchange="previewprofileImage(event)">
+                                            <label for="profile_image">
+                                                <img id="previewprofile" src="Images/profile-user.png"
+                                                    alt="Profile Icon">
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="username" class="col-form-label">Full name:</label>
+                                        <input type="text" class="form-control" id="username" name="username" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="mobile" class="col-form-label">Mobile:</label>
+                                        <input type="number" class="form-control" id="mobile" name="mobile" required
+                                            disabled>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="col-form-label">Email:</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="address" class="col-form-label">Address:</label>
+                                        <textarea class="form-control" id="address" name="address" rows="3"
+                                            required></textarea>
+                                    </div>
+                                    <div class="">
+                                        <div class="mb-3 row">
+                                            <label for="pincode" class="col-sm-3 col-form-label">Pincode:</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="pincode" name="pincode"
+                                                    maxlength="6" required>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="city" class="col-sm-3 col-form-label">City:</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="city" name="city" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label for="state" class="col-sm-3 col-form-label">State:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="state" name="state" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label for="blood_group" class="col-sm-9 col-lg-4 col-md-6 col-form-label">Blood
+                                            Group:</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-select" id="blood_group" name="blood_group" required>
+                                                <option value="">Select Blood Group</option>
+                                                <option value="A+">A+</option>
+                                                <option value="A-">A-</option>
+                                                <option value="B+">B+</option>
+                                                <option value="B-">B-</option>
+                                                <option value="AB+">AB+</option>
+                                                <option value="AB-">AB-</option>
+                                                <option value="O+">O+</option>
+                                                <option value="O-">O-</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label for="dob" class="col-sm-9 col-lg-4 col-md-6 col-form-label">Date of
+                                            Birth:</label>
+                                        <div class="col-sm-10">
+                                            <input type="date" class="form-control" id="dob" name="dob" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Gender:</label>
+                                        <div class="col-sm-10 gender">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gender" id="male"
+                                                    value="Male" required>
+                                                <label class="form-check-label" for="male">Male</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gender" id="female"
+                                                    value="Female">
+                                                <label class="form-check-label" for="female">Female</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gender" id="other"
+                                                    value="Others">
+                                                <label class="form-check-label" for="other">Other</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center gap-2 center_div">
+                                        <button type="button" class=" next-btn" id="profile-next">Next</button>
+                                    </div>
+
+                                    <div class="text-center gap-2 center_div">
+                                        <button type="button" class="next-btn" id="updateProfile"
+                                            style="display: none;">Update</button>
+                                    </div>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: none;" id="document-part">
+
+                        <!-- Driving License Accordion -->
+
+                        <div class="accordion-item mt-4">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed super-sub-points" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Driving License
+                                    <span class="icon-container" id="icon-headingOne"></span>
+                                </button>
+                                <span class="remark"></span>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <form id="driving-license-form">
+                                        <div class="mb-3">
+                                            <label for="dl_number" class="col-form-label">DL Number:</label>
+                                            <input type="text" class="form-control" id="dl_number" name="dl_number"
+                                                placeholder="Example: DL-1234567890" required>
+                                            <div class="editNumber" id="change_dl_number" style="display: none;">
+                                                Change DL Number <i class="fa fa-edit"></i> </div>
+                                        </div>
+                                        <div class="text-center gap-2 center_div">
+                                            <button type="button" class=" next-btn"
+                                                id="driving-license-next">Verify</button>
+                                        </div>
+                                        <div class="DL_Photos" id="DL_photos" style="display: none;">
+                                            <div class='photo-input'>
+                                                <div class="mb-3 front-choose">
+                                                    <label for="dl_front_photo" class="col-form-label">Front DL:</label>
+                                                    <input type="file" class="square-input" id="dl_front_photo"
+                                                        name="dl_front_photo" required placeholder='front'>
+                                                    <img id="front_photo_preview"
+                                                        style="display: none; width: 150px; height: 100px; object-fit: fill;" />
+                                                    </input>
+                                                </div>
+                                                <div class="mb-3 back-choose">
+                                                    <label for="dl_back_photo" class="col-form-label">Back DL:</label>
+                                                    <input type="file" class="square-input" id="dl_back_photo"
+                                                        name="dl_back_photo" required placeholder='back'>
+                                                    <img id="back_photo_preview"
+                                                        style="display: none; width: 150px; height: 100px; object-fit: fill;" />
+                                                    </input>
+                                                </div>
+                                            </div>
+                                            <div class="text-center gap-2 center_div">
+                                                <button type="button" class="next-btn" id="submit-dl-photo">Submit
+                                                    Photo</button>
+                                            </div>
+
+                                            <div class="text-center gap-2 center_div">
+                                                <button type="button" class="next-btn" id="updateDL"
+                                                    style="display: none;">Update</button>
+                                            </div>
+                                            <div class="editNumber" id="edit_dl_number_warning" style="display: none;">
+                                                *please first verify the new DL number
+                                            </div>
+                                        </div>
+
+
+                                        <div class="text-center gap-2 center_div">
+                                            <button type="button" class=" next-btn edit" style="display: none;"
+                                                id="driving-license-update">Edit <i class="fa fa-edit"></i></button>
+                                        </div>
+                                        <!-- <span class="remark" style="display: none;"></span> -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vehicle RC Accordian  -->
+
+                        <div class="accordion-item mt-4">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed super-sub-points" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Vehicle RC
+                                    <span class="icon-container" id="icon-headingOne"></span>
+                                    <span class="remark"></span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <form id="vehicle-rc-form">
+                                        <div class="mb-3">
+                                            <label for="vehicle_ownership" class="col-form-label">Vehicle
+                                                Ownership:</label>
+                                            <select class="form-select" id="vehicle_ownership" name="vehicle_ownership"
+                                                required>
+                                                <option value="">Select Ownership</option>
+                                                <option value="Self-owned">Self-owned</option>
+                                                <option value="Rented">Rented</option>
+                                            </select>
+                                        </div>
+                                        <!-- <div class="mb-3">
+                    <label for="vehicle_state" class="col-form-label">Enter Vehicle State:</label>
+                    <input type="text" class="form-control" id="vehicle_state" name="vehicle_state">
+                </div> -->
+                                        <div class="mb-3">
+                                            <label for="vehicle_number" class="col-form-label">Enter Vehicle
+                                                Number:</label>
+                                            <input type="text" class="form-control" id="vehicle_number"
+                                                name="vehicle_number" required>
+                                            <div class="editNumber" id="change_vehicle_number" style="display: none;">
+                                                Change Vehicle Number <i class="fa fa-edit"></i> </div>
+                                        </div>
+
+                                        <!-- <div class="mb-3">
+                    <label for="model_name" class="col-form-label">Model Name:</label>
+                    <input type="text" class="form-control" id="model_name" name="model_name">
+                </div> -->
+                                        <!-- <div class="mb-3">
+                    <label for="vehicle_color" class="col-form-label">Select Color:</label>
+                    <select class="form-select" id="vehicle_color" name="vehicle_color">
+                        <option value="">Select Color</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Green">Green</option>
+                        <option value="Yellow">Yellow</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div> -->
+                                        <div class="text-center gap-2 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="next-btn" id="vehicle-rc-next">Next</button>
+                                        </div>
+
+                                        <div class="RC_Photos" id="RC_photos" style="display: none;">
+                                            <div class='photo-input'>
+                                                <div class="mb-3 front-choose">
+                                                    <label for="rc_front_photo" class="col-form-label">Front RC:</label>
+                                                    <input type="file" class="square-input" id="rc_front_photo"
+                                                        name="rc_front_photo" required placeholder='front'>
+                                                    <img id="rc_front_photo_preview"
+                                                        style="display: none; width: 150px; height: 100px; object-fit: fill;" />
+                                                    </input>
+                                                </div>
+
+                                            </div>
+                                            <div class="text-center gap-2 center_div">
+                                                <button type="button" class="next-btn" id="submit-rc-photo">Submit
+                                                    Photo</button>
+                                            </div>
+
+                                            <div class="text-center gap-2 center_div">
+                                                <button type="button" class="next-btn" id="updaterc"
+                                                    style="display: none;">Update</button>
+                                            </div>
+                                            <div class="editNumber" id="edit_vehicle_number_warning"
+                                                style="display: none;">
+                                                *please first verify the new vehicle number
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center gap-2 center_div">
+                                            <button type="button" class=" next-btn edit" style="display: none;"
+                                                id="rc_Edit">Edit <i class="fa fa-edit"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- PAN Card Accordion -->
+                        <div class="accordion-item mt-4">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed super-sub-points" type="button"
+                                    data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    PAN Card
+                                    <span class="icon-container" id="icon-headingOne"></span>
+                                    <span class="remark"></span>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <form id="pan-card-form">
+                                        <div class="mb-3">
+                                            <label for="pan_number" class="col-form-label">PAN Card Number:</label>
+                                            <input type="text" class="form-control" id="pan_number" name="pan_number"
+                                                placeholder="Enter PAN Card number" required>
+                                            <div class="editNumber" id="change_pan_number" style="display: none;">
+                                                Change PAN Number <i class="fa fa-edit"></i> </div>
+                                        </div>
+                                        <div class="text-center gap-2 center_div">
+                                            <button type="button" class="next-btn" id="pan-card-next">Next</button>
+                                        </div>
+                                        <div class="PAN_Photos" id="PAN_photos" style="display: none;">
+                                            <div class='photo-input'>
+                                                <div class="mb-3 front-choose">
+                                                    <label for="pan_front_photo" class="col-form-label">Front
+                                                        PAN:</label>
+                                                    <input type="file" class="square-input" id="pan_front_photo"
+                                                        name="pan_front_photo" required placeholder='front'>
+                                                    <img id="pan_front_photo_preview"
+                                                        style="display: none; width: 150px; height: 100px; object-fit: fill;" />
+                                                </div>
+                                            </div>
+                                            <div class="text-center gap-2 center_div">
+                                                <button type="button" class="next-btn" id="submit-pan-photo">Submit
+                                                    Photo</button>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="text-center gap-2 center_div">
+                                            <button type="button" class="next-btn" id="updatepan"
+                                                style="display: none;">Update</button>
+                                        </div>
+
+                                        <div class="editNumber" id="edit_pan_number_warning" style="display: none;">
+                                            *please first verify the new PAN number
+                                        </div>
+
+                                        <div class="text-center gap-2 center_div mt-2">
+                                            <button type="button" class=" next-btn edit" style="display: none;"
+                                                id="pan_Edit">Edit <i class="fa fa-edit"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Aadhar Card Accordian  -->
+
+                        <div class="accordion-item mt-4">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed super-sub-points" type="button"
+                                    data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    Aadhar Card
+                                    <span class="icon-container" id="icon-headingOne"></span>
+                                    <span class="remark"></span>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <form id="aadhaar-card-form">
+                                        <div class="mb-3" id="aadhar_number_section">
+                                            <label for="aadhaar_number" class="col-form-label">Aadhaar Card
+                                                Number:</label>
+                                            <input type="text" class="form-control" id="aadhaar_number"
+                                                name="aadhaar_number" placeholder="Enter Aadhaar Card number" required>
+                                            <div class="feedback" id="addhar_feedback" style="display: none;">Please
+                                                wait for a while
+                                                for OTP regeneration</div>
+                                            <div class="editNumber" id="edit_aadhar_number" style="display: none;">
+                                                Change Aadhar Number <i class="fa fa-edit"></i> </div>
+                                        </div>
+                                        <div class="mb-3" id="aadhar_otp_section" style="display: none;">
+                                            <label for="aadhaar_number" class="col-form-label">Enter OTP:</label>
+                                            <input type="number" class="form-control" id="aadhaar_otp"
+                                                name="aadhaar_otp" placeholder="Enter 6 digit OTP" required>
+                                        </div>
+                                        <div class=" text-center gap-2 center_div" id="aadhar_btn_div">
+                                            <button type="button" class="next-btn" id="aadhar-next">Verify</button>
+                                        </div>
+                                        <div class=" text-center gap-2 center_div">
+                                            <button type="button" class="next-btn" id="aadhar-otp-verify"
+                                                style="display: none;">Verify
+                                                OTP</button>
+                                        </div>
+
+                                        <div class="AADHAR_Photos" id="AADHAR_Photos" style="display: none;">
+                                            <div class='photo-input'>
+                                                <div class="mb-3 front-choose">
+                                                    <label for="aadhar_front_photo"
+                                                        class="col-form-label">Front:</label>
+                                                    <input type="file" class="square-input" id="aadhar_front_photo"
+                                                        name="aadhar_front_photo" required placeholder='front'>
+                                                    <img id="aadhar_front_photo_preview"
+                                                        style="display: none; width: 150px; height: 100px; object-fit: fill;" />
+                                                    </input>
+                                                </div>
+                                                <div class="mb-3 back-choose">
+                                                    <label for="aadhar_back_photo" class="col-form-label">Back:</label>
+                                                    <input type="file" class="square-input" id="aadhar_back_photo"
+                                                        name="aadhar_back_photo" required placeholder='back'>
+                                                    <img id="aadhar_back_photo_preview"
+                                                        style="display: none; width: 150px; height: 100px; object-fit: fill;" />
+                                                    </input>
+                                                </div>
+                                            </div>
+                                            <div class="text-center gap-2 center_div">
+                                                <button type="button" class="next-btn " id="submit-aadhar-photo">Submit
+                                                    Photo</button>
+                                            </div>
+
+                                            <div class="text-center gap-2 center_div">
+                                                <button type="button" class="next-btn" id="updateAADHAR"
+                                                    style="display: none;">Update</button>
+                                            </div>
+                                            <div class="editNumber" id="edit_aadhar_number_warning"
+                                                style="display: none;">
+                                                *please verify the new addhar number with OTP
+                                            </div>
+                                        </div>
+
+
+                                        <div class="text-center gap-2 mt-2 center_div">
+                                            <button type="button" class=" next-btn edit" style="display: none;"
+                                                id="aadhar-edit">Edit <i class="fa fa-edit"></i></button>
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Bank Details Accordion -->
+                    <div id="bank-part" style="display: block;">
+
+
+                        <div class="accordion-item mt-4">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed super-sub-points" type="button"
+                                    data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                    aria-controls="collapseSix">
+                                    Payment Method
+                                    <span class="icon-container" id="icon-headingSix"></span>
+                                    <span class="remark"></span>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <div>
+                                            <h5 class="text-center">Please select one method to Receive your payment:
+                                            </h5>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center mt-4 mb-5 gap-5">
+
+                                            <div class=" center_div border-bottom " id="btn-bank-details"
+                                                style="cursor: pointer;">
+                                                <h5 class="" id="bank">Bank Acc.
+                                                </h5>
+                                            </div>
+                                            <div>
+                                                <h4>|</h4>
+                                            </div>
+                                            <div class=" center_div border-bottom" id="btn-upi"
+                                                style="cursor: pointer;">
+                                                <h5 class="" id="upi">UPI</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <form id="bank-details-form">
+                                        <div id="bank-details-section" class="d-none">
+                                            <div class="mb-3">
+                                                <label for="username" class="col-form-label">Account Holder
+                                                    Name:</label>
+                                                <input type="text" class="form-control" id="username" name="username">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="acc-number" class="col-form-label">Account Number:</label>
+                                                <input type="text" class="form-control" id="acc-number"
+                                                    name="acc-number">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="confirm-acc-number" class="col-form-label">Confirm Account
+                                                    Number:</label>
+                                                <input type="text" class="form-control" id="confirm-acc-number"
+                                                    name="confirm-acc-number">
+                                                <div class="invalid-feedback" id="acc-number-feedback">Account numbers
+                                                    do
+                                                    not match.</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="ifsc-code" class="col-form-label">IFSC Code:</label>
+                                                <input type="text" class="form-control" id="ifsc-code" name="ifsc-code"
+                                                    aria-describedby="ifsc-code-feedback">
+                                                <div id="ifsc-code-feedback" class="invalid-feedback"></div>
+                                                <div id="ifsc-code-branch" class="valid-feedback"></div>
+                                            </div>
+                                            <div class="mb-3" id="bank_name" style="display: none;">
+                                                <label for="bank-name" class="col-form-label">Bank Name</label>
+                                                <input type="text" class="form-control" id="bank-name" name="bank-name"
+                                                    readonly>
+                                            </div>
+                                            <div class="mb-3" id="branch_name" style="display: none;">
+                                                <label for="branch-name" class="col-form-label">Branch Name</label>
+                                                <input type="text" class="form-control" id="branch-name"
+                                                    name="branch-name" readonly>
+                                            </div>
+
+                                            <div class="text-center gap-2">
+                                                <button type="button" class="next-btn" id="bank_submit">Submit</button>
+                                            </div>
+                                        </div>
+                                        <div id="upi-section" class="d-none">
+                                            <div class="mb-3">
+                                                <label for="upi-id" class="col-form-label">UPI ID:</label>
+                                                <input type="text" class="form-control" id="upi-id" name="upi-id">
+                                            </div>
+
+                                            <div class="text-center gap-2">
+                                                <button type="button" class="next-btn" id="upi_submit">Submit</button>
+                                            </div>
+                                        </div>
+
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="d-flex justify-content-center mt-5 mb-5">
+                    <button class="reg-but" onclick="logout()">
+                        Logout <i class="fa fa-arrow-right-from-bracket"></i>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- </form> -->
+        </section>
+
+
+    </main>
+
+
+    <footer class="">
+        <div class="">
+            <div class="footer-section">
+
+                <div class="col-lg-6 col-md-6 col-12 d-flex flex-row justify-content-around footer-apps">
+                    <div class="download-app">
+                        <p>Download Customer App</p>
+                        <div class="app-links">
+                            <a href="playstore-link"><img src="Images/Google_Play_Store_badge_EN.svg.png"
+                                    alt="Play Store"></a>
+                            <a href="applestore-link"><img src="Images/App_Store_Badge.svg (2).png"
+                                    alt="Apple Store"></a>
+                        </div>
+                    </div>
+                    <div class="download-app">
+                        <p>Download Driver App</p>
+                        <div class="app-links">
+                            <a href="playstore-link"><img src="Images/Google_Play_Store_badge_EN.svg.png"
+                                    alt="Play Store"></a>
+                            <a href="applestore-link"><img src="Images/App_Store_Badge.svg (2).png"
+                                    alt="Apple Store"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-2 col-md-2 col-6 shortcuts">
+                    <h5 class="footer-heading">Shortcuts</h5>
+                    <div class="list-unstyled">
+                        <li><a class="direct-links" href="index.html">Home</a></li>
+                        <li><a class="direct-links" href="safety.html">Safety</a></li>
+                        <li><a class="direct-links" href="drive_with_us.html">Drive with Us</a></li>
+                        <li><a class="direct-links" href="about_us.html">Career</a></li>
+                        <li><a class="direct-links" href="about_us.html">About Us</a></li>
+                        <li><a class="direct-links" href="initiatives.html">Initiatives</a></li>
+                        <li><a class="direct-links" href="faq.html">FAQ</a></li>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 add-sec col-6">
+                    <h5 class="footer-heading">Address</h5>
+
+                    <div class="add-div">
+                        737-738, 7 Floor, Mall of Jaipur, Gandhi Path,
+                        <br> W B Block, Vaishali Nagar,
+                        <br> Jaipur, Raj 302021
+
+                        </p>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+            <div class="footer-bottom ">
+
+                <div class="">
+                    <p class="fw-bold">© 2024 @ First And Last Mile Connectivity India PVT. Limited. All Rights
+                        Reserved.</p>
+                </div>
+
+                <div class="social-links mt-2 mb-2">
+                    <a href="facebook-link"><img class="socialImg" src="Images/Facebook.png" alt=""></a>
+                    <a href="twitter-link"><img class="socialImg" src="Images/Twitter.png" alt=""></a>
+                    <a href="instagram-link"><img class="socialImg" src="Images/Instagram.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    </div>
+    <script>
+        const logout = () => {
+            console.log('Logout')
+            localStorage.clear();
+            window.location.href = 'index.html';
+        }
+    </script>
+
+    <script>
+        const aadhaarOtpInput = document.getElementById('aadhaar_otp');
+        const aadhaarNumberInp = document.getElementById('aadhaar_number');
+
+        aadhaarNumberInp.addEventListener('input', function (event) {
+            const value = event.target.value;
+
+            // Ensure only numbers are allowed (prevents unintended pasting)
+            if (!/^\d+$/.test(value)) {
+                aadhaarNumberInp.value = value.replace(/[^0-9]/g, '');
+                return;
+            }
+
+            // Restrict to a maximum of 12 digits
+            if (value.length > 12) {
+                aadhaarNumberInp.value = value.slice(0, 12);
+            }
+        });
+
+        aadhaarOtpInput.addEventListener('input', function (event) {
+            const value = event.target.value;
+
+            // Ensure only numbers are allowed (prevents unintended pasting)
+            if (!/^\d+$/.test(value)) {
+                aadhaarOtpInput.value = value.replace(/[^0-9]/g, '');
+                return;
+            }
+
+            // Restrict to a maximum of 6 digits
+            if (value.length > 6) {
+                aadhaarOtpInput.value = value.slice(0, 6);
+            }
+        });
+    </script>
+
+
+
+    <script>
+        function previewprofileImage(event) {
+            var input = event.target;
+            var reader = new FileReader();
+
+            reader.onload = function () {
+                var img = document.getElementById('previewprofile');
+                img.src = reader.result;
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+
+        // Retrieve data from localStorage
+        var mobileNumber = localStorage.getItem('mobileNumber');
+
+        // Check if mobileNumber is not null or undefined
+        if (mobileNumber) {
+            // Set the value of the input field
+            document.getElementById('mobile').value = mobileNumber;
+        }
+    </script>
+
+    <script>
+        document.getElementById('btn-bank-details').addEventListener('click', function () {
+
+            document.getElementById('bank-details-section').classList.remove('d-none');
+            document.getElementById('upi-section').classList.add('d-none');
+            document.getElementById('bank').classList.add('button-span');
+            document.getElementById('upi').classList.remove('button-span');
+        });
+
+        document.getElementById('btn-upi').addEventListener('click', function () {
+            document.getElementById('bank').classList.remove('button-span');
+            document.getElementById('upi').classList.add('button-span');
+            document.getElementById('bank-details-section').classList.add('d-none');
+            document.getElementById('upi-section').classList.remove('d-none');
+        });
+
+        document.getElementById('confirm-acc-number').addEventListener('input', function () {
+            var accNumber = document.getElementById('acc-number').value;
+            var confirmAccNumber = document.getElementById('confirm-acc-number').value;
+            var feedback = document.getElementById('acc-number-feedback');
+
+
+            if (accNumber !== confirmAccNumber) {
+                feedback.style.display = 'block';
+                // submitBtn.disabled = true;
+            } else {
+                feedback.style.display = 'none';
+                // submitBtn.disabled = false;
+            }
+        });
+
+        document.getElementById('acc-number').addEventListener('input', function () {
+            document.getElementById('confirm-acc-number').dispatchEvent(new Event('input'));
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="JS/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/newBoot.js"></script>
+    <script src="JS/oldRegistration.js"></script>
+    <script src="JS/contact-form.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/uza.bundle.js"></script>
+    <script src="JS/active.js"></script>
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // $(document).ready(function () {
+        //     $('.accordion-button').on('click', function () {
+        //         var $iconContainer = $(this).find('.icon-container');
+        //         var $accordionButton = $(this);
+
+        //         // If the button is currently collapsed, it will expand
+        //         if ($accordionButton.hasClass('collapsed')) {
+        //             $iconContainer.html('<i class="fas fa-chevron-up"></i>');
+        //         } else { // If the button is currently expanded, it will collapse
+        //             $iconContainer.html('<i class="fas fa-chevron-down"></i>');
+        //         }
+
+        //         // Toggle other open accordions
+        //         $('.accordion-button').not($accordionButton).each(function () {
+        //             var $iconContainerOther = $(this).find('.icon-container');
+        //             $(this).addClass('collapsed');
+        //             $iconContainerOther.html('<i class="fas fa-chevron-down"></i>');
+        //         });
+        //     });
+
+        //     // Set initial icon state
+        //     $('.accordion-button.collapsed .icon-container').html('<i class="fas fa-chevron-down"></i>');
+        // });
+    </script>
+
+
+
+
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const yearSpan = document.getElementById('year');
+            const curYear = new Date().getFullYear();
+            yearSpan.textContent = curYear;
+        });
+    </script> -->
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+
+</body>
+
+</html>

@@ -89,19 +89,19 @@
                                                 with us</a></li>
                                         <li class="text-decoration-none nav-items"><a href="about_us.html">About
                                                 Us</a></li>
-                                        <li class="text-decoration-none nav-items"><a href="initiatives.html">Our
-                                                Initiatives</a></li>
+                                        <!-- <li class="text-decoration-none nav-items"><a href="initiatives.html">Our
+                                                Initiatives</a></li> -->
                                     </ul>
                                 </div>
 
                                 <!-- <div>|</div> -->
 
-                                <div class="login-register-btn mx-3" data-toggle="modal" data-target="#customer-login">
+                                <!-- <div class="login-register-btn mx-3" data-toggle="modal" data-target="#customer-login">
                                     <a href="login.html">
 
                                         <div class="log-in">Log In</div>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </nav>
@@ -118,10 +118,9 @@
                     <div class="side-text drive-text">
 
                         <!-- <span class="line-2">Become A</span><br> -->
-                        <span class="line-3" style="font-weight: 700;">"Registration"</span><br>
+                        <span class="line-3  reg-line">"Registration"</span><br>
                         <!-- <span class="line-4">With Us</span> -->
                     </div>
-
 
                     <!-- <div class="btn-2 rydr-btn mt-5">
                         <button class="btn-sec "><a href="">Registration</a></button>
@@ -135,17 +134,11 @@
 
 
         <section id="registrationForm">
-
             <!-- <form id="main-form"> -->
-            <div class="d-flex">
-
-                <div>sdfsdf</div>
-                <div>sdfsdf</div>
-            </div>
             <div class="container page-margin d-flex flex-column justify-content-center align-items-center ">
                 <h2 class="text-center sub-heading">Driver Registration</h2>
                 <div class="accordion" id="accordionExample">
-                    <div class="accordion-item mt-4">
+                    <!-- <div class="accordion-item mt-4">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button collapsed super-sub-points" type="button"
                                 data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
@@ -264,6 +257,80 @@
 
                             </div>
                         </div>
+                    </div> -->
+
+
+
+                    <!-- Aadhar Card Accordian  -->
+
+                    <div class="accordion-item mt-4">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed super-sub-points" type="button"
+                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                aria-controls="collapseOne"
+                                onclick="handleAccordionClick('aadhaar_number', 'aadhar-next')">
+                                Aadhar Card
+                                <span class="icon-container" id="icon-headingOne"></span>
+                                <span class="remark"></span>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <form id="aadhaar-card-form">
+                                    <div class="mb-3" id="aadhar_number_section">
+                                        <label for="aadhaar_number" class="col-form-label">Aadhaar Card Number:</label>
+                                        <input type="text" class="form-control" id="aadhaar_number"
+                                            name="aadhaar_number" placeholder="Enter Aadhaar Card number" required>
+                                        <div class="feedback" id="addhar_feedback" style="display: none;">Please
+                                            wait for a while
+                                            for OTP regeneration</div>
+                                    </div>
+                                    <div class="mb-3" id="aadhar_otp_section" style="display: none;">
+                                        <label for="aadhaar_number" class="col-form-label">Enter OTP:</label>
+                                        <input type="number" class="form-control" id="aadhaar_otp" name="aadhaar_otp"
+                                            placeholder="Enter 6 digit OTP" required>
+                                    </div>
+                                    <div class=" text-center gap-2" id="aadhar_btn_div">
+                                        <button type="button" class="next-btn" id="aadhar-next">Next</button>
+                                    </div>
+                                    <div class=" text-center gap-2">
+                                        <button type="button" class="next-btn" id="aadhar-otp-verify"
+                                            style="display: none;">Verify
+                                            OTP</button>
+                                    </div>
+
+                                    <div id="aadhar_details" class="mt-3" style="display: none;">
+                                        <span><strong>Name:</strong></span> <span id="aadhar_name"></span>
+                                        <br>
+                                        <span><strong>Gender:</strong></span> <span id="aadhar_gender"></span>
+                                        <br>
+                                        <span><strong>DOB:</strong></span> <span id="aadhar_dob"></span>
+                                        <br>
+                                        <span><strong>Permanent Address:</strong></span> <span
+                                            id="aadhar_permanent_address"></span>
+                                        <br>
+                                        <br>
+                                        <div class="mb-3">
+                                            <label for="currentAddressField" class="col-form-label">Current
+                                                Address:</label>
+                                            <input type="checkbox" id="same_address" onchange="toggleCurrentAddress()">
+                                            Same as Permanent Address
+                                            <textarea class="form-control" id="currentAddressField"
+                                                name="currentAddressField" rows="3" required></textarea>
+                                        </div>
+
+                                        <div class=" text-center gap-2">
+                                            <button type="button" class="next-btn" id="aadhar-Submit-add"
+                                                onclick="ConfirmDocument('AADHAR', aadhar)">Submit</button>
+                                        </div>
+
+
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Driving License Accordion -->
@@ -272,11 +339,12 @@
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed super-sub-points" type="button"
                                 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                aria-controls="collapseTwo">
+                                aria-controls="collapseTwo"
+                                onclick="handleAccordionClick('dl_number', 'driving-license-next')">
                                 Driving License
                                 <span class="icon-container" id="icon-headingOne"></span>
                             </button>
-                            <span class="remark">*</span>
+                            <span class="remark"></span>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
@@ -284,15 +352,28 @@
                                 <form id="driving-license-form">
                                     <div class="mb-3">
                                         <label for="dl_number" class="col-form-label">DL Number:</label>
+
                                         <input type="text" class="form-control" id="dl_number" name="dl_number"
-                                            placeholder="Example: DL-1234567890" required>
-                                    </div>
-                                    <div class="DL_Photos" id="DL_photos">
+                                            placeholder='' required>
+
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <span class="edit-icon" style=" display: none;" id="Dl_edit">Change DL
+                                                Number <i class="fas fa-edit"></i></span>
+                                        </div>
 
                                     </div>
-                                    <div class="text-center gap-2">
+
+                                    <div class="DL_details" id="DL_details" style="display: none;">
+
+                                    </div>
+                                    <div class="text-center gap-2" id="btn-div">
                                         <button type="button" class=" next-btn"
                                             id="driving-license-next">Verify</button>
+                                    </div>
+
+                                    <div class="text-center gap-2 mt-3" id="dl_div">
+                                        <button type="button" class=" next-btn" id="Dl_details_confirm"
+                                            onclick="ConfirmDocument('DL', DL)" style="display: none;">Confirm</button>
                                     </div>
                                     <!-- <span class="remark" style="display: none;"></span> -->
                                 </form>
@@ -316,49 +397,35 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <form id="vehicle-rc-form">
-                                    <div class="mb-3">
-                                        <label for="vehicle_ownership" class="col-form-label">Vehicle Ownership:</label>
-                                        <select class="form-select" id="vehicle_ownership" name="vehicle_ownership">
-                                            <option value="">Select Ownership</option>
-                                            <option value="Self-owned">Self-owned</option>
-                                            <option value="Rented">Rented</option>
-                                        </select>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="vehicle_state" class="col-form-label">Enter Vehicle State:</label>
-                                        <input type="text" class="form-control" id="vehicle_state" name="vehicle_state">
-                                    </div>
+
+
                                     <div class="mb-3">
                                         <label for="vehicle_number" class="col-form-label">Enter Vehicle Number:</label>
                                         <input type="text" class="form-control" id="vehicle_number"
                                             name="vehicle_number">
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <span class="edit-icon" style=" display: none;" id="vehicle_edit">Change
+                                                Vehicle
+                                                Number<i class="fas fa-edit"></i></span>
+                                        </div>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="model_name" class="col-form-label">Model Name:</label>
-                                        <input type="text" class="form-control" id="model_name" name="model_name">
+
+                                    <div class="vehicle_details" id="vehicle_details">
+
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="vehicle_color" class="col-form-label">Select Color:</label>
-                                        <select class="form-select" id="vehicle_color" name="vehicle_color">
-                                            <option value="">Select Color</option>
-                                            <option value="Red">Red</option>
-                                            <option value="Blue">Blue</option>
-                                            <option value="Green">Green</option>
-                                            <option value="Yellow">Yellow</option>
-                                            <option value="Black">Black</option>
-                                            <option value="White">White</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div>
-                                    <div class="text-center gap-2">
+
+                                    <div class="text-center gap-2" id="rc_btn_div">
                                         <button type="button" class="next-btn" id="vehicle-rc-next">Next</button>
+                                    </div>
+                                    <div class="text-center gap-2 mt-3" id="rc_div">
+                                        <button type="button" class=" next-btn" id="rc_details_confirm"
+                                            onclick="ConfirmDocument('RC', RC)" style="display: none;">Confirm</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
 
-                    <!-- PAN Card Accordion -->
                     <!-- PAN Card Accordion -->
                     <div class="accordion-item mt-4">
                         <h2 class="accordion-header" id="headingFour">
@@ -378,23 +445,36 @@
                                         <label for="pan_number" class="col-form-label">PAN Card Number:</label>
                                         <input type="text" class="form-control" id="pan_number" name="pan_number"
                                             placeholder="Enter PAN Card number" required>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <span class="edit-icon" style=" display: none;" id="pan_edit">Change
+                                                PAN
+                                                Number<i class="fas fa-edit"></i></span>
+                                        </div>
                                     </div>
-                                    <div class="text-center gap-2">
+
+                                    <div class="pan_details" id="pan_details">
+
+                                    </div>
+                                    <div class="text-center gap-2" id="pan_btn_div">
                                         <button type="button" class=" next-btn" id="pan-card-next">Next</button>
+                                    </div>
+                                    <div class="text-center gap-2 mt-3" id="pan_div">
+                                        <button type="button" class=" next-btn" id="pan_details_confirm"
+                                            onclick="ConfirmDocument('PAN', pan)"
+                                            style="display: none;">Confirm</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Aadhar Card Accordian  -->
-
+                    <!-- Bank Details Accordion -->
                     <div class="accordion-item mt-4">
                         <h2 class="accordion-header" id="headingFive">
                             <button class="accordion-button collapsed super-sub-points" type="button"
                                 data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
                                 aria-controls="collapseFive">
-                                Aadhar Card
+                                Bank Details
                                 <span class="icon-container" id="icon-headingOne"></span>
                                 <span class="remark"></span>
                             </button>
@@ -402,26 +482,97 @@
                         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <form id="aadhaar-card-form">
-                                    <div class="mb-3">
-                                        <label for="aadhaar_number" class="col-form-label">Aadhaar Card Number:</label>
-                                        <input type="text" class="form-control" id="aadhaar_number"
-                                            name="aadhaar_number" placeholder="Enter Aadhaar Card number" required>
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <div>
+                                        <h4>Please select one method to Receive your payment:</h4>
                                     </div>
-                                    <div class=" text-center gap-2">
-                                        <button type="button" class="next-btn" id="aadhar-next">Next</button>
+                                    <div class="d-flex justify-content-center align-items-center mt-4 mb-5 gap-5">
+
+                                        <div class=" center_div border-bottom " id="btn-bank-details"
+                                            style="cursor: pointer;">
+                                            <h4 class="" id="bank">Bank Acc.
+                                            </h4>
+                                        </div>
+                                        <div>
+                                            <h4>|</h4>
+                                        </div>
+                                        <div class=" center_div border-bottom" id="btn-upi" style="cursor: pointer;">
+                                            <h4 class="" id="upi">UPI</h4>
+                                        </div>
                                     </div>
+                                </div>
+
+                                <form id="bank-details-form">
+                                    <div id="bank-details-section" class="d-none">
+                                        <div class="mb-3">
+                                            <label for="username" class="col-form-label">Username:</label>
+                                            <input type="text" class="form-control" id="username" name="username">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="acc-number" class="col-form-label">Account Number:</label>
+                                            <input type="text" class="form-control" id="acc-number" name="acc-number">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="confirm-acc-number" class="col-form-label">Confirm Account
+                                                Number:</label>
+                                            <input type="text" class="form-control" id="confirm-acc-number"
+                                                name="confirm-acc-number">
+                                            <div class="invalid-feedback" id="acc-number-feedback">Account numbers do
+                                                not match.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="ifsc-code" class="col-form-label">IFSC Code:</label>
+                                            <input type="text" class="form-control" id="ifsc-code" name="ifsc-code"
+                                                aria-describedby="ifsc-code-feedback">
+                                            <div id="ifsc-code-feedback" class="invalid-feedback"></div>
+                                            <div id="ifsc-code-branch" class="valid-feedback"></div>
+                                        </div>
+                                        <div class="mb-3" id="bank_name" style="display: none;">
+                                            <label for="bank-name" class="col-form-label">Bank Name</label>
+                                            <input type="text" class="form-control" id="bank-name" name="bank-name"
+                                                readonly>
+                                        </div>
+                                        <div class="mb-3" id="branch_name" style="display: none;">
+                                            <label for="branch-name" class="col-form-label">Branch Name</label>
+                                            <input type="text" class="form-control" id="branch-name" name="branch-name"
+                                                readonly>
+                                        </div>
+
+                                        <div class="text-center gap-2">
+                                            <button type="button" class="next-btn" id="bank_submit">Submit</button>
+                                        </div>
+                                    </div>
+                                    <div id="upi-section" class="d-none">
+                                        <div class="mb-3">
+                                            <label for="upi-id" class="col-form-label">UPI ID:</label>
+                                            <input type="text" class="form-control" id="upi-id" name="upi-id">
+                                        </div>
+
+                                        <div class="text-center gap-2">
+                                            <button type="button" class="next-btn" id="upi_submit">Submit</button>
+                                        </div>
+                                    </div>
+
+
+
                                 </form>
                             </div>
                         </div>
                     </div>
 
+
                 </div>
             </div>
 
-            <div class="text-center mt-3">
-                <button type="submit" class=" reg-but" id="registration-submit">SUBMIT</button>
+            <div class="d-flex justify-content-center mt-5">
+                <button class="reg-but" onclick="logout()">
+                    Logout
+                </button>
             </div>
+
+            <!-- <div class="text-center mt-3">
+                <button type="submit" class=" reg-but" id="registration-submit">SUBMIT</button>
+            </div> -->
 
 
             <!-- </form> -->
@@ -432,16 +583,13 @@
     </main>
 
 
-    <footer class="footer">
+    <footer class="">
         <div class="">
-            <div class="row footer-section">
+            <div class="footer-section">
 
-                <div class="col-lg-4 col-md-4 col-6">
-                    <div class="footer-logo">
-                        <img src="Images/new-logo.png" alt="Logo">
-                    </div>
+                <div class="col-lg-6 col-md-6 col-12 d-flex flex-row justify-content-around footer-apps">
                     <div class="download-app">
-                        <p>Download Our App</p>
+                        <p>Download Customer App</p>
                         <div class="app-links">
                             <a href="playstore-link"><img src="Images/Google_Play_Store_badge_EN.svg.png"
                                     alt="Play Store"></a>
@@ -449,72 +597,59 @@
                                     alt="Apple Store"></a>
                         </div>
                     </div>
-                    <div class="social-links mt-3">
-                        <a href="facebook-link"><img src="Images/Facebook.png" alt=""></a>
-                        <a href="twitter-link"><img src="Images/Twitter.png" alt=""></a>
-                        <a href="instagram-link"><img src="Images/Instagram.png" alt=""></a>
+                    <div class="download-app">
+                        <p>Download Driver App</p>
+                        <div class="app-links">
+                            <a href="playstore-link"><img src="Images/Google_Play_Store_badge_EN.svg.png"
+                                    alt="Play Store"></a>
+                            <a href="applestore-link"><img src="Images/App_Store_Badge.svg (2).png"
+                                    alt="Apple Store"></a>
+                        </div>
                     </div>
+
                 </div>
 
 
-                <div class="col-lg-2 col-md-2 col-6">
+                <div class="col-lg-2 col-md-2 col-6 shortcuts">
                     <h5 class="footer-heading">Shortcuts</h5>
-                    <ul class="list-unstyled">
+                    <div class="list-unstyled">
                         <li><a class="direct-links" href="index.html">Home</a></li>
                         <li><a class="direct-links" href="safety.html">Safety</a></li>
                         <li><a class="direct-links" href="drive_with_us.html">Drive with Us</a></li>
-
+                        <li><a class="direct-links" href="about_us.html">Career</a></li>
                         <li><a class="direct-links" href="about_us.html">About Us</a></li>
                         <li><a class="direct-links" href="initiatives.html">Initiatives</a></li>
                         <li><a class="direct-links" href="faq.html">FAQ</a></li>
-                    </ul>
+                    </div>
                 </div>
-
                 <div class="col-lg-3 col-md-3 add-sec col-6">
                     <h5 class="footer-heading">Address</h5>
 
                     <div class="add-div">
-                        <p><strong class="add">Registered Office:</strong><br>
-                            737-738, 7 Floor, Mall of Jaipur, Gandhi Path, W B Block, Vaishali Nagar,
-                            Jaipur, Raj 302021
-                            <br>
-                            Email: reachus@rydr.co.in<br>
+                        737-738, 7 Floor, Mall of Jaipur, Gandhi Path,
+                        <br> W B Block, Vaishali Nagar,
+                        <br> Jaipur, Raj 302021
+
                         </p>
-                        <p><strong class="add">Branch Office:</strong><br>
-                            G 148 First Floor South City 2, Gurugram, Haryana 122018 <br>
-                            Email: reachus@rydr.co.in</p>
                     </div>
+
 
                 </div>
 
 
-                <div class="col-lg-3 col-md-3 col-6 d-flex  flex-column align-item-center contact-sec">
-                    <div>
-                        <h5 class="footer-heading">Contact Us</h5>
-                    </div>
-                    <div>
-                        <form class="contact-form contact-div">
-                            <input type="text" class="form-control" placeholder=" Name" id="connect-name" required>
-                            <input type="number" class="form-control" placeholder=" Phone" required name=""
-                                id="connect-phone">
-                            <input type="email" class="form-control" placeholder="Email" id="connect-email" required>
-                            <textarea class="form-control" rows="3" placeholder=" Message" id="connect-message"
-                                required></textarea>
-                            <button type="submit" class="btn log-in contact-btn" id="contact-submit">Contact</button>
-                        </form>
-                    </div>
-                </div>
+
             </div>
-            <div class="footer-bottom row">
+            <div class="footer-bottom ">
 
-                <div class="col-lg-5 col-md-5">
-                    <p>© 2024 @ First And Last Mile Connectivity India PVT. Limited. All Rights Reserved.</p>
+                <div class="">
+                    <p class="fw-bold">© 2024 @ First And Last Mile Connectivity India PVT. Limited. All Rights
+                        Reserved.</p>
                 </div>
 
-                <div class="col-lg-5 col-md-5 col-12 text-md-right footer-end">
-                    <a href="privacy-policy-link">Privacy Policy</a>
-                    <span> | </span>
-                    <a href="terms-conditions-link">Terms & Conditions</a>
+                <div class="social-links mt-2 mb-2">
+                    <a href="facebook-link"><img class="socialImg" src="Images/Facebook.png" alt=""></a>
+                    <a href="twitter-link"><img class="socialImg" src="Images/Twitter.png" alt=""></a>
+                    <a href="instagram-link"><img class="socialImg" src="Images/Instagram.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -523,29 +658,108 @@
 
     </div>
 
+    <script>
+        const logout = () => {
+            console.log('Logout')
+            localStorage.clear();
+            window.location.href = 'index.html';
+        }
+    </script>
+
 
 
     <script>
-        function previewprofileImage(event) {
-            var input = event.target;
-            var reader = new FileReader();
+        // function previewprofileImage(event) {
+        //     var input = event.target;
+        //     var reader = new FileReader();
 
-            reader.onload = function () {
-                var img = document.getElementById('previewprofile');
-                img.src = reader.result;
-            };
+        //     reader.onload = function () {
+        //         var img = document.getElementById('previewprofile');
+        //         img.src = reader.result;
+        //     };
 
-            reader.readAsDataURL(input.files[0]);
-        }
+        //     reader.readAsDataURL(input.files[0]);
+        // }
 
-        // Retrieve data from localStorage
-        var mobileNumber = localStorage.getItem('mobileNumber');
+        // // Retrieve data from localStorage
+        // var mobileNumber = localStorage.getItem('mobileNumber');
 
-        // Check if mobileNumber is not null or undefined
-        if (mobileNumber) {
-            // Set the value of the input field
-            document.getElementById('mobile').value = mobileNumber;
-        }
+        // // Check if mobileNumber is not null or undefined
+        // if (mobileNumber) {
+        //     // Set the value of the input field
+        //     document.getElementById('mobile').value = mobileNumber;
+        // }
+
+
+        const aadhaarOtpInput = document.getElementById('aadhaar_otp');
+        const aadhaarNumberInp = document.getElementById('aadhaar_number');
+
+        aadhaarNumberInp.addEventListener('input', function (event) {
+            const value = event.target.value;
+
+            // Ensure only numbers are allowed (prevents unintended pasting)
+            if (!/^\d+$/.test(value)) {
+                aadhaarNumberInp.value = value.replace(/[^0-9]/g, '');
+                return;
+            }
+
+            // Restrict to a maximum of 12 digits
+            if (value.length > 12) {
+                aadhaarNumberInp.value = value.slice(0, 12);
+            }
+        });
+
+        aadhaarOtpInput.addEventListener('input', function (event) {
+            const value = event.target.value;
+
+            // Ensure only numbers are allowed (prevents unintended pasting)
+            if (!/^\d+$/.test(value)) {
+                aadhaarOtpInput.value = value.replace(/[^0-9]/g, '');
+                return;
+            }
+
+            // Restrict to a maximum of 6 digits
+            if (value.length > 6) {
+                aadhaarOtpInput.value = value.slice(0, 6);
+            }
+        });
+
+    </script>
+
+    <script>
+        document.getElementById('btn-bank-details').addEventListener('click', function () {
+
+            document.getElementById('bank-details-section').classList.remove('d-none');
+            document.getElementById('upi-section').classList.add('d-none');
+            document.getElementById('bank').classList.add('button-span');
+            document.getElementById('upi').classList.remove('button-span');
+        });
+
+        document.getElementById('btn-upi').addEventListener('click', function () {
+            document.getElementById('bank').classList.remove('button-span');
+            document.getElementById('upi').classList.add('button-span');
+            document.getElementById('bank-details-section').classList.add('d-none');
+            document.getElementById('upi-section').classList.remove('d-none');
+        });
+
+        document.getElementById('confirm-acc-number').addEventListener('input', function () {
+            var accNumber = document.getElementById('acc-number').value;
+            var confirmAccNumber = document.getElementById('confirm-acc-number').value;
+            var feedback = document.getElementById('acc-number-feedback');
+            var submitBtn = document.getElementById('submit-btn');
+
+            if (accNumber !== confirmAccNumber) {
+                feedback.style.display = 'block';
+                submitBtn.disabled = true;
+            } else {
+                feedback.style.display = 'none';
+                submitBtn.disabled = false;
+            }
+        });
+
+        document.getElementById('acc-number').addEventListener('input', function () {
+            document.getElementById('confirm-acc-number').dispatchEvent(new Event('input'));
+        });
     </script>
 
 
@@ -570,6 +784,22 @@
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleCurrentAddress() {
+            const sameAddressCheckbox = document.getElementById('same_address');
+            const permanentAddress = document.getElementById('aadhar_permanent_address').innerText;
+            const currentAddressField = document.getElementById('currentAddressField');
+
+            if (sameAddressCheckbox.checked) {
+                currentAddressField.value = permanentAddress;
+                currentAddressField.setAttribute('readonly', 'readonly');
+            } else {
+                currentAddressField.value = '';
+                currentAddressField.removeAttribute('readonly');
+            }
+
+        }
+    </script>
 
     <script>
         // $(document).ready(function () {
